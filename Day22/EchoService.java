@@ -1,5 +1,6 @@
 import java.rmi.Remote;
 import java.rmi.RemoteException;
+import java.io.Serializable;
 /**
 * An implementation of the echo service.
 */

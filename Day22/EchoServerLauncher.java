@@ -6,6 +6,11 @@ import java.rmi.RemoteException;
 
 public class EchoServerLauncher{
 
+	public static void main(String[] args) {
+		EchoServerLauncher launcher = new EchoServerLauncher();
+		launcher.launch();
+	}
+
 	private void launch() {
 		try {
 // 1. Create the registry if there is not one
@@ -14,7 +19,7 @@ public class EchoServerLauncher{
 			EchoServer server = new EchoServer();
 // 3. Register (bind) the server object on the registy.
 // The registry may be on a different machine
-			String registryAddress = "localhost";
+			String registryAddress = "127.0.0.1";
 			String registryUrl = "//" + registryAddress + "/";
 			String serviceName = "echo";
 			Naming.rebind(registryUrl + serviceName, server);
