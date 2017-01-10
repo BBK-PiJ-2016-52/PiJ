@@ -5,11 +5,17 @@ string = System.console().readLine();
 int number = Integer.parseInt(string);
 def list = [];
 
-for(int i = 0; number != -1; i++) {
+for(int i = 0; number != -2; i++) {
 	list[i] = number;
 	String string = System.console().readLine();
 	number = Integer.parseInt(string);
 	if (list[i] < list[i + 1] && (list[i] < list[i - 1])) {
-		println "No";
-	} 
-}
+		if (number == -1){
+			print "No";
+		}
+	} else {
+		if (number == -1){
+			print "Yes";
+		}
+	}
+} 
