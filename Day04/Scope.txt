@@ -1,0 +1,4 @@
+The int value i is only visible for the print method and the nested loop including the if statement.
+The int valur j is on;y visible for the nested loop as well for the if/ else statement inside of it.
+The int newSize is only visible for the setter setSize because is setting this.size to newSize.
+The in size is visible to all components of the class UnixMatrix because it is declarated at the beggining of the class and doesn't have any restriction making it public.
