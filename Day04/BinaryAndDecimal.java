@@ -46,7 +46,8 @@ class BinaryAndDecimal  {
 	public static void decimalInput(){
 		System.out.println("Enter a decimal number: ");
 		String str1 = System.console().readLine();
-		decimal2binary(str1);
+		int integerValue = Integer.parseInt(str1);
+		decimal2binary(integerValue);
 	}
 
 	public static void binary2decimal(String str0){
@@ -59,7 +60,19 @@ class BinaryAndDecimal  {
 		System.out.println("You entered Binary: " + str0 + " in Decimal is: " + j);
 	}
 
-	public static void decimal2binary(String str1){
-		System.out.println("I have to do something." + str1);
+	public static void decimal2binary(int integerValue){
+		int[] result = new int[4];
+		for (int i = 0; i <= 7; i++) {
+			if (integerValue % 2 == 0) {
+				result[i] = 1;
+				integerValue = integerValue/2;
+			}else {
+				result[i] = 0;
+				integerValue = integerValue/2;
+			}
+			for (int j = 0; j < result.length; j++) {
+				System.out.print(" " + result[j]);
+			}
+		}
 	}
 }
