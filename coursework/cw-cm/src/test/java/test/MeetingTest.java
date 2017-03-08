@@ -1,7 +1,7 @@
 package test;
 
 import impl.MeetingImpl;
-import impl.MockContactImpl;
+//import impl.MockContactImpl;
 import org.junit.Before;
 import org.junit.Test;
 import spec.Contact;
@@ -38,7 +38,7 @@ public class MeetingTest {
 
     @Test
     public void testConstructorSets() {
-        Meeting meeting = new MeetingImpl(nowDate, contacts);
+        Meeting meeting = (Meeting) new MeetingImpl(nowDate, contacts);
 
         assertThat(meeting.getId(), is(notNullValue()));
         assertEquals(meeting.getDate(), nowDate);
@@ -47,7 +47,7 @@ public class MeetingTest {
 
     @Test
     public void testImmutableDate() {
-        Meeting meeting = new MeetingImpl(nowDate, contacts);
+        Meeting meeting = (Meeting) new MeetingImpl(nowDate, contacts);
         Calendar date = meeting.getDate();
         date.add(Calendar.YEAR, 1);
         assertFalse(date.get(Calendar.YEAR) == meeting.getDate().get(Calendar.YEAR));
@@ -55,7 +55,7 @@ public class MeetingTest {
 
     @Test
     public void testContactsImmutableFromOutsideObject() {
-        Meeting meeting = new MeetingImpl(nowDate, contacts);
+        Meeting meeting = (Meeting) new MeetingImpl(nowDate, contacts);
         Set<Contact> contacts = meeting.getContacts();
         contacts.add(new MockContactImpl());
         assertFalse(contacts.size() == meeting.getContacts().size());
@@ -63,8 +63,8 @@ public class MeetingTest {
 
     @Test
     public void testUniqueIds() {
-        Meeting meetingOne = new MeetingImpl(nowDate, contacts);
-        Meeting meetingTwo = new MeetingImpl(nowDate, contacts);
+        Meeting meetingOne = (Meeting) new MeetingImpl(nowDate, contacts);
+        Meeting meetingTwo = (Meeting) new MeetingImpl(nowDate, contacts);
 
         assertThat(meetingOne.getId(), is(not(equalTo(meetingTwo.getId()))));
     }
