@@ -37,7 +37,7 @@ public class ContactManagerTest {
             contactManager.addNewContact(null, "notes");
             fail();
         } catch (NullPointerException e) {
-            System.out.println(e);
+            e.printStackTrace();
         }
     }
 
@@ -47,7 +47,7 @@ public class ContactManagerTest {
             contactManager.addNewContact("name", null);
             fail();
         } catch (NullPointerException e) {
-            System.out.println(e);
+            e.printStackTrace();
         }
     }
 
@@ -96,7 +96,7 @@ public class ContactManagerTest {
             contactManager.getContacts(3, 8);
             fail();
         } catch (IllegalArgumentException e) {
-            System.out.println(e);
+            e.printStackTrace();
         }
     }
 
@@ -112,7 +112,7 @@ public class ContactManagerTest {
             contactManager.addFutureMeeting(outsideContactSet, futureDate);
             fail();
         } catch (IllegalArgumentException e) {
-
+            e.printStackTrace();
         }
     }
 
@@ -124,7 +124,7 @@ public class ContactManagerTest {
             contactManager.addFutureMeeting(mike, pastDate);
             fail();
         } catch (IllegalArgumentException e) {
-
+            e.printStackTrace();
         }
     }
 
@@ -139,7 +139,7 @@ public class ContactManagerTest {
             contactManager.getFutureMeetingList(sue);
             fail();
         } catch (IllegalArgumentException e) {
-            System.out.print(e);
+            e.printStackTrace();
         }
     }
 
@@ -202,14 +202,14 @@ public class ContactManagerTest {
     @Test
     public void testAddNewPastMeetingContactNotFoundThrowsException() {
         contactManager.addNewContact("mike", "notes");
-        Set<Contact> outsideContactSet = new HashSet<Contact>();
+        Set<Contact> outsideContactSet = new HashSet<>();
         outsideContactSet.add((Contact) new ContactImpl("sue", "notes"));
 
         try {
             contactManager.addNewPastMeeting(outsideContactSet, pastDate, "text");
             fail();
         } catch (IllegalArgumentException e) {
-            System.out.print(e);
+            e.printStackTrace();
         }
     }
 
@@ -219,7 +219,7 @@ public class ContactManagerTest {
             contactManager.addNewPastMeeting(null, pastDate, "text");
             fail();
         } catch (NullPointerException e) {
-            System.out.print(e);
+            e.printStackTrace();
         }
     }
 
@@ -231,7 +231,7 @@ public class ContactManagerTest {
             contactManager.addNewPastMeeting(mike, null, "text");
             fail();
         } catch (NullPointerException e) {
-            System.out.print(e);
+            e.printStackTrace();
         }
     }
 
@@ -243,7 +243,7 @@ public class ContactManagerTest {
             contactManager.addNewPastMeeting(mike, pastDate, null);
             fail();
         } catch (NullPointerException e) {
-            System.out.print(e);
+            e.printStackTrace();
         }
     }
 
@@ -258,7 +258,7 @@ public class ContactManagerTest {
             contactManager.getPastMeetingListFor(sue);
             fail();
         } catch (IllegalArgumentException e) {
-            System.out.print(e);
+            e.printStackTrace();
         }
     }
 
@@ -371,7 +371,7 @@ public class ContactManagerTest {
             contactManager.getPastMeeting(futureMeetingId);
             fail();
         } catch (IllegalArgumentException e) {
-            System.out.println(e);
+            e.printStackTrace();
         }
     }
 
@@ -416,7 +416,7 @@ public class ContactManagerTest {
             contactManager.getFutureMeeting(pastMeetingId);
             fail();
         } catch (IllegalArgumentException e) {
-            System.out.print(e);
+            e.printStackTrace();
         }
     }
 
@@ -498,7 +498,7 @@ public class ContactManagerTest {
             contactManager.addMeetingNotes(pastMeetingId, null);
             fail();
         } catch (NullPointerException e) {
-            System.out.print(e);
+            e.printStackTrace();
         }
     }
 
@@ -513,7 +513,7 @@ public class ContactManagerTest {
             contactManager.addMeetingNotes(futureMeetingId, "notes");
             fail();
         } catch (IllegalStateException e) {
-            System.out.print(e);
+            e.printStackTrace();
         }
     }
 
@@ -523,7 +523,7 @@ public class ContactManagerTest {
             contactManager.addMeetingNotes(100, "notes");
             fail();
         } catch (IllegalArgumentException e) {
-            System.out.print(e);
+            e.printStackTrace();
         }
     }
 
