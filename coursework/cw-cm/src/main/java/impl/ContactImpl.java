@@ -5,5 +5,6 @@ package impl;
  */
 public class ContactImpl {
     public ContactImpl(String s, String name) {
+
     }
 }
