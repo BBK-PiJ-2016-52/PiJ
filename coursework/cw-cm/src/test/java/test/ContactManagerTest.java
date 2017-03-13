@@ -23,7 +23,7 @@ public class ContactManagerTest {
 
     @Before
     public void setUp() {
-        contactManager = (ContactManager) new ContactManagerImpl();
+        contactManager = new ContactManagerImpl();
         nowDate = Calendar.getInstance();
         pastDate = Calendar.getInstance();
         pastDate.add(Calendar.YEAR, -1);

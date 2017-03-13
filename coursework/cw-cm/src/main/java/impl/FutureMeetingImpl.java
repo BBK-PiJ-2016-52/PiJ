@@ -13,8 +13,8 @@ import java.util.Set;
  * An implementation of the FutureMeeting interface.
  */
 public class FutureMeetingImpl extends MeetingImpl implements FutureMeeting, Serializable{
-    public FutureMeetingImpl(Calendar nowDate, Set<Contact> contacts) {
-        super(nowDate, contacts);
+    public FutureMeetingImpl(Calendar date, Set<Contact> contacts) {
+        super(date, contacts);
     }
 
     /**

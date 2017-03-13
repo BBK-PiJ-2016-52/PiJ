@@ -35,8 +35,10 @@ public class ContactImpl implements Contact, Serializable{
 
     @Override
     public void addNotes(String note) {
-        this.notes = notes;
+        if (this.notes.isEmpty()) {
+            this.notes = note;
+        } else {
+            this.notes += "" + note;
+        }
     }
-
-
 }

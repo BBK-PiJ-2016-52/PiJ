@@ -7,7 +7,7 @@ package spec;
  * a name (not necessarily unique), and notes that the user
  * may want to save about them.
  */
-public interface  Contact {
+public interface Contact {
     /**
      * Returns the ID of the contact.
      *

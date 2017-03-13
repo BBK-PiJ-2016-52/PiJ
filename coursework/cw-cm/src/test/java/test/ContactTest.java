@@ -41,14 +41,14 @@ public class ContactTest {
 
     @Test
     public void testContactConstructorSetNameNotes() {
-        Contact sue = (Contact) new ContactImpl("sue", "notes1");
+        Contact sue = new ContactImpl("sue", "notes1");
         assertEquals("sue", sue.getName());
         assertEquals("notes1", sue.getNotes());
     }
 
     @Test
     public void testGetNotesNone() {
-        Contact sue = (Contact) new ContactImpl("name", "sue");
+        Contact sue = new ContactImpl("name", "sue");
         assertEquals("", sue.getNotes());
     }
 

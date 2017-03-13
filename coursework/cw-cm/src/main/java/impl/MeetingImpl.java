@@ -14,14 +14,15 @@ public class MeetingImpl implements Meeting {
     private Calendar date;
     private Set<Contact> contacts;
 
-    public MeetingImpl(int id, Calendar nowDate, Set<Contact> contacts) {
+    public MeetingImpl(int id, Calendar date, Set<Contact> contacts) {
         this.id = id;
         this.date = date;
         this.contacts = contacts;
     }
 
-    public MeetingImpl(Calendar nowDate, Set<Contact> contacts) {
-
+    public MeetingImpl(Calendar date, Set<Contact> contacts) {
+        this.date = date;
+        this.contacts = contacts;
     }
 
 
