@@ -1,2 +1,2 @@
 
-# Module: PiJ - Programming in Java @BBK
+# Module: PiJ - Programming in Java at Birkbeck, University of London.
