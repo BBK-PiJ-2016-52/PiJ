@@ -48,7 +48,7 @@ public class ContactTest {
 
     @Test
     public void testGetNotesNone() {
-        Contact sue = new ContactImpl("name", "sue");
+        Contact sue = new ContactImpl("name", "");
         assertEquals("", sue.getNotes());
     }
 
