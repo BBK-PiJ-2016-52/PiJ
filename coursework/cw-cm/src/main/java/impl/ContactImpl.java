@@ -42,7 +42,7 @@ public class ContactImpl implements Contact, Serializable{
         if (this.notes.isEmpty()) {
             this.notes = note;
         } else {
-            this.notes += "" + note;
+            this.notes = "" + note;
         }
     }
 }
