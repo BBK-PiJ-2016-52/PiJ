@@ -10,11 +10,15 @@ import java.io.Serializable;
 public class ContactImpl implements Contact, Serializable{
     private String name;
     private int id;
-    private final String s;
+    private String s;
     private String notes;
 
-    public ContactImpl(String s, String name) {
-        this.s = s;
+    ContactImpl(){
+
+    }
+
+    public ContactImpl(String name, String notes) {
+        this.notes = notes;
         this.name = name;
     }
 
@@ -30,7 +34,7 @@ public class ContactImpl implements Contact, Serializable{
 
     @Override
     public String getNotes() {
-        return this.notes;
+            return this.notes;
     }
 
     @Override

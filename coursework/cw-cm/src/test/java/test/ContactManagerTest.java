@@ -106,7 +106,7 @@ public class ContactManagerTest {
     public void testAddFutureMeetingContactNotFoundThrowsException() {
         contactManager.addNewContact("mike", "notes");
         Set<Contact> outsideContactSet = new HashSet<Contact>();
-        outsideContactSet.add((Contact) new ContactImpl("sue", "notes"));
+        outsideContactSet.add(new ContactImpl("sue", "notes"));
 
         try {
             contactManager.addFutureMeeting(outsideContactSet, futureDate);
@@ -134,7 +134,7 @@ public class ContactManagerTest {
         Set<Contact> mikeSet = contactManager.getContacts("mike");
         contactManager.addFutureMeeting(mikeSet, futureDate);
 
-        Contact sue = (Contact) new ContactImpl("sue", "notes");
+        Contact sue = new ContactImpl("sue", "notes");
         try {
             contactManager.getFutureMeetingList(sue);
             fail();
@@ -187,7 +187,7 @@ public class ContactManagerTest {
 
     @Test
     public void testAddFutureDateReturnsId() {
-        Contact mike = (Contact) new ContactImpl("mike", "notes");
+        Contact mike = new ContactImpl("mike", "notes");
         contactManager.addNewContact("mike", "notes");
         Set<Contact> mikeSet = contactManager.getContacts("mike");
 
@@ -203,7 +203,7 @@ public class ContactManagerTest {
     public void testAddNewPastMeetingContactNotFoundThrowsException() {
         contactManager.addNewContact("mike", "notes");
         Set<Contact> outsideContactSet = new HashSet<>();
-        outsideContactSet.add((Contact) new ContactImpl("sue", "notes"));
+        outsideContactSet.add(new ContactImpl("sue", "notes"));
 
         try {
             contactManager.addNewPastMeeting(outsideContactSet, pastDate, "text");
@@ -253,7 +253,7 @@ public class ContactManagerTest {
         Set<Contact> mikeSet = contactManager.getContacts("mike");
         contactManager.addNewPastMeeting(mikeSet, pastDate, "text");
 
-        Contact sue = (Contact) new ContactImpl("sue", "notes");
+        Contact sue = new ContactImpl("sue", "notes");
         try {
             contactManager.getPastMeetingListFor(sue);
             fail();

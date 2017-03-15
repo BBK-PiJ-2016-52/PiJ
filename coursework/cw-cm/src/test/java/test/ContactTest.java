@@ -26,7 +26,7 @@ public class ContactTest {
 
     @Test
     public void testContactConstructorSetName() {
-        Contact sue = (Contact) new ContactImpl("name", "sue");
+        Contact sue = new ContactImpl("name", "sue");
         assertEquals("sue", sue.getName());
     }
 
@@ -54,7 +54,7 @@ public class ContactTest {
 
     @Test
     public void testAddNotesSingle() {
-        Contact sue = (Contact) new ContactImpl("name", "sue");
+        Contact sue = new ContactImpl("name", "sue");
         sue.addNotes("notes1");
         assertEquals("notes1", sue.getNotes());
     }
@@ -62,7 +62,7 @@ public class ContactTest {
 
     @Test
     public void testAddNotesMultiple() {
-        Contact sue = (Contact) new ContactImpl("sue", "notes1");
+        Contact sue = new ContactImpl("sue", "notes1");
         sue.addNotes("notes2");
         sue.addNotes("notes3");
         String returned = sue.getNotes();
@@ -74,8 +74,8 @@ public class ContactTest {
 
     @Test
     public void testContactUniqueIds() {
-        Contact jim = (Contact) new ContactImpl("name", "jim");
-        Contact mike = (Contact) new ContactImpl("name", "mike");
+        Contact jim = new ContactImpl("name", "jim");
+        Contact mike = new ContactImpl("name", "mike");
 
         assertThat(jim.getId(), is(not(equalTo(mike.getId()))));
     }

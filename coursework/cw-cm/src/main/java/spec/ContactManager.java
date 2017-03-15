@@ -55,7 +55,7 @@ public interface ContactManager {
 
     /**
      * Returns the list of future meetings scheduled with this contact.
-     * <p>
+ * <p>¬
      * If there are none, the returned list will be empty. Otherwise,
      * the list will be chronologically sorted and will not contain any
      * duplicates.
