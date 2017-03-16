@@ -38,7 +38,7 @@ public class MeetingTest {
 
     @Test
     public void testConstructorSets() {
-        Meeting meeting = (Meeting) new MeetingImpl(nowDate, contacts);
+        Meeting meeting = new MeetingImpl(nowDate, contacts);
 
         assertThat(meeting.getId(), is(notNullValue()));
         assertEquals(meeting.getDate(), nowDate);
