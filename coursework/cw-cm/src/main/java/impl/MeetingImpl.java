@@ -19,6 +19,11 @@ public class MeetingImpl implements Meeting {
         this.contacts = contacts;
     }
 
+    public MeetingImpl(int id, Set<Contact> contacts, Calendar date) {
+        this.contacts = contacts;
+        this.date = date;
+        this.id = id;
+    }
 
     @Override
     public int getId() {

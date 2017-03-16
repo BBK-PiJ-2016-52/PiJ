@@ -9,26 +9,27 @@ import java.util.Set;
 /**
  * Created by Eric on 08/03/2017.
  */
-public class PastMeetingImpl implements PastMeeting{
+public class PastMeetingImpl extends MeetingImpl implements PastMeeting {
     private String notes;
 
+    public PastMeetingImpl(int id, Set<Contact> contacts, Calendar date, String notes) {
+        super(id, contacts, date);
+        this.notes = notes;
+
+    }
+
     @Override
-    public String getNotes(){
+    public String getNotes() {
         return this.notes;
     }
 
-    @Override
-    public int getId() {
-        return 0;
-    }
+    public void addNotes(String notes) {
 
-    @Override
-    public Calendar getDate() {
-        return null;
-    }
+        if (this.notes.isEmpty()) {
+            this.notes = notes;
 
-    @Override
-    public Set<Contact> getContacts() {
-        return null;
+        } else {
+            this.notes += " - " + notes;
+        }
     }
 }

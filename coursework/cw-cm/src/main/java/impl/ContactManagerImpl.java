@@ -3,18 +3,21 @@ package impl;
 import spec.*;
 
 import java.io.Serializable;
-import java.util.Calendar;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 import java.util.Set;
-import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.HashSet;
+import java.util.Optional;
 
 /**
  * Created by Eric on 08/03/2017.
  */
 public class ContactManagerImpl implements ContactManager, Serializable{
+    private ContactImpl contactImpl = new ContactImpl();
+    public static int contactIdCount = 0;
     public static List<Contact> allContacts = new ArrayList<>();
-
 
 
     /**
@@ -85,14 +88,25 @@ public class ContactManagerImpl implements ContactManager, Serializable{
     public int addNewContact(String name, String notes) {
         Objects.requireNonNull(name, "name can't be null");
         Objects.requireNonNull(notes, "notes can't be null");
-        if (name.equals("") || notes.equals("")) {
-            throw new IllegalArgumentException("Empty String");
+
+        for (Contact i : allContacts) {
+            System.out.println(i.getName());
+            if (i.getName().equals(name)) {
+                System.out.println("contact exists");
+                return i.getId();
+            }
         }
-        Contact newContact = new ContactImpl(name, notes);
-        newContact.addNotes(notes);
+
+        /*if (name.equals("") || notes.equals("")) {
+            throw new IllegalArgumentException("Empty String");
+        }*/
+        ContactImpl newContact = new ContactImpl(contactIdCount++, name, notes);
         allContacts.add(newContact);
+        System.out.println(newContact + "added");
+
         return newContact.getId();
     }
+
     /**
      * Returns a set with the contacts whose name contains that string.
      * <p>
@@ -114,8 +128,24 @@ public class ContactManagerImpl implements ContactManager, Serializable{
 
     @Override
     public Set<Contact> getContacts(int... ids) {
-        return null;
-    }
+        Set<Contact> results = new HashSet<>();
+
+        for (int i : ids) {
+            if (i > contactIdCount) {
+                throw new IllegalArgumentException("Error: ID out of range");
+            }
+            Optional<Contact> contacts = this.allContacts.stream()
+                    .parallel()
+                    .filter(c -> c.getId() == i)
+                    .findAny();
+
+            if (contacts.isPresent()) {
+                results.add(contacts.get());
+            } else {
+                throw new IllegalArgumentException("Error: ID number not found");
+            }
+        }
+        return results;    }
 
     @Override
     public void flush() {

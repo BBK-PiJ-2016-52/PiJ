@@ -10,8 +10,8 @@ import java.io.Serializable;
 public class ContactImpl implements Contact, Serializable{
     private String name;
     private int id;
-    private String s;
     private String notes;
+    private ContactManagerImpl contactManager;
 
     ContactImpl(){
 
@@ -20,6 +20,13 @@ public class ContactImpl implements Contact, Serializable{
     public ContactImpl(String name, String notes) {
         this.notes = notes;
         this.name = name;
+    }
+
+    public ContactImpl(int id, String name, String notes){
+        this.id = id;
+        this.notes = notes;
+        this.name = name;
+        contactManager.contactIdCount++;
     }
 
     @Override
@@ -41,8 +48,8 @@ public class ContactImpl implements Contact, Serializable{
     public void addNotes(String note) {
         if (this.notes.isEmpty()) {
             this.notes = note;
-        } else {
-            this.notes = "" + note;
+        }else {
+            this.notes += note;
         }
     }
 }

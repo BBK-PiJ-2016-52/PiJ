@@ -26,7 +26,7 @@ public class ContactTest {
 
     @Test
     public void testContactConstructorSetName() {
-        Contact sue = new ContactImpl("name", "sue");
+        Contact sue = new ContactImpl("sue", "name");
         assertEquals("sue", sue.getName());
     }
 
@@ -58,7 +58,6 @@ public class ContactTest {
         sue.addNotes("notes1");
         assertEquals("notes1", sue.getNotes());
     }
-
 
     @Test
     public void testAddNotesMultiple() {
