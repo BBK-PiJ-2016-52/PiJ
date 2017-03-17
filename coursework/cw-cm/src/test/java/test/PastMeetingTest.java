@@ -2,6 +2,7 @@ package test;
 
 import impl.MeetingImpl;
 //import impl.MockContactImpl;
+import impl.PastMeetingImpl;
 import org.junit.Before;
 import org.junit.Test;
 import spec.Contact;
@@ -12,6 +13,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class PastMeetingTest {
 
@@ -23,14 +25,13 @@ public class PastMeetingTest {
     public void setUp() {
         pastDate = Calendar.getInstance();
         pastDate.add(Calendar.YEAR, -1);
-        contacts = new HashSet<Contact>();
-        //contacts.add(new MockContactImpl());
-        //contacts.add(new MockContactImpl());
-        pastMeeting = (PastMeeting) new MeetingImpl(pastDate, contacts);
+        //contacts = new HashSet<Contact>();
+        //pastMeeting = (PastMeetingImpl) new MeetingImpl(pastDate,contacts);
     }
 
     @Test
     public void testGetNotesNone() {
+        PastMeetingImpl pastMeeting = new PastMeetingImpl(1,contacts,pastDate);
         assertEquals("", pastMeeting.getNotes());
     }
 
