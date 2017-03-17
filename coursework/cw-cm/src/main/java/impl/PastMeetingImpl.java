@@ -22,4 +22,7 @@ public class PastMeetingImpl extends MeetingImpl implements PastMeeting {
         return notes;
     }
 
+    public void addNotes(String note) {
+        notes += note;
+    }
 }

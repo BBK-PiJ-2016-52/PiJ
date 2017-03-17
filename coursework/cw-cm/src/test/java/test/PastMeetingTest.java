@@ -35,9 +35,11 @@ public class PastMeetingTest {
         assertEquals("", pastMeeting.getNotes());
     }
 
- /*
+
     @Test
     public void testAddNotesSingle() {
+        PastMeetingImpl pastMeeting = new PastMeetingImpl(1,contacts,pastDate);
+
         pastMeeting.addNotes("Notes 1");
 
         assertTrue(pastMeeting.getNotes().contains("Notes 1"));
@@ -45,11 +47,12 @@ public class PastMeetingTest {
 
     @Test
     public void testAddNotesMultiple() {
+        PastMeetingImpl pastMeeting = new PastMeetingImpl(1,contacts,pastDate);
+
         pastMeeting.addNotes("Notes 1");
         pastMeeting.addNotes("Notes 2");
 
         assertTrue(pastMeeting.getNotes().contains("Notes 1"));
         assertTrue(pastMeeting.getNotes().contains("Notes 2"));
     }
-    */
 }
