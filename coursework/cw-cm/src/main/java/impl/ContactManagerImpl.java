@@ -132,7 +132,7 @@ public class ContactManagerImpl implements ContactManager, Serializable{
 
         for (int i : ids) {
             if (i > contactIdCount) {
-                throw new IllegalArgumentException("Error: ID out of range");
+                throw new IllegalArgumentException("Id out of range");
             }
             Optional<Contact> contacts = this.allContacts.stream()
                     .parallel()
@@ -142,7 +142,7 @@ public class ContactManagerImpl implements ContactManager, Serializable{
             if (contacts.isPresent()) {
                 results.add(contacts.get());
             } else {
-                throw new IllegalArgumentException("Error: ID number not found");
+                throw new IllegalArgumentException("Id doesn't exist");
             }
         }
         return results;    }

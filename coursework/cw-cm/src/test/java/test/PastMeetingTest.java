@@ -1,7 +1,6 @@
 package test;
 
 import impl.MeetingImpl;
-//import impl.MockContactImpl;
 import impl.PastMeetingImpl;
 import org.junit.Before;
 import org.junit.Test;
@@ -25,13 +24,13 @@ public class PastMeetingTest {
     public void setUp() {
         pastDate = Calendar.getInstance();
         pastDate.add(Calendar.YEAR, -1);
-        //contacts = new HashSet<Contact>();
-        //pastMeeting = (PastMeetingImpl) new MeetingImpl(pastDate,contacts);
+        contacts = new HashSet<Contact>();
     }
 
     @Test
     public void testGetNotesNone() {
         PastMeetingImpl pastMeeting = new PastMeetingImpl(1,contacts,pastDate);
+
         assertEquals("", pastMeeting.getNotes());
     }
 

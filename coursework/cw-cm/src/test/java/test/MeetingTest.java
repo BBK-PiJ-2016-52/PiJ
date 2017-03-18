@@ -23,8 +23,6 @@ public class MeetingTest {
     public void setUp() {
         nowDate = Calendar.getInstance();
         contacts = new HashSet<Contact>();
-        //contacts.add(new MockContactImpl());
-        //contacts.add(new MockContactImpl());
     }
 
     @Test

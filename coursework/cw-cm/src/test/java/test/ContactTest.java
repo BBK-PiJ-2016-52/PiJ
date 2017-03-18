@@ -1,6 +1,7 @@
 package test;
 
 import impl.ContactImpl;
+import impl.ContactManagerImpl;
 import org.junit.Before;
 import org.junit.Test;
 import spec.Contact;
@@ -26,8 +27,8 @@ public class ContactTest {
 
     @Test
     public void testContactConstructorSetName() {
-        Contact sue = new ContactImpl("sue", "name");
-        assertEquals("sue", sue.getName());
+        Contact eric = new ContactImpl("eric", "notes");
+        assertEquals("eric", eric.getName());
     }
 
     @Test
@@ -41,30 +42,35 @@ public class ContactTest {
 
     @Test
     public void testContactConstructorSetNameNotes() {
-        Contact sue = new ContactImpl("sue", "notes1");
-        assertEquals("sue", sue.getName());
-        assertEquals("notes1", sue.getNotes());
+        Contact eric = new ContactImpl("eric", "notes");
+
+        assertEquals("eric", eric.getName());
+        assertEquals("notes", eric.getNotes());
     }
 
     @Test
     public void testGetNotesNone() {
-        Contact sue = new ContactImpl("name", "");
-        assertEquals("", sue.getNotes());
+        Contact eric = new ContactImpl("eric", "");
+
+        assertEquals("", eric.getNotes());
     }
 
     @Test
     public void testAddNotesSingle() {
-        Contact sue = new ContactImpl("name", "sue");
-        sue.addNotes("notes1");
-        assertEquals("notes1", sue.getNotes());
+        Contact eric = new ContactImpl("eric", "notes");
+
+        eric.addNotes("notes1");
+
+        assertEquals("notes"+"notes1", eric.getNotes());
     }
 
     @Test
     public void testAddNotesMultiple() {
-        Contact sue = new ContactImpl("sue", "notes1");
-        sue.addNotes("notes2");
-        sue.addNotes("notes3");
-        String returned = sue.getNotes();
+        Contact eric = new ContactImpl("eric", "notes1");
+        eric.addNotes("notes2");
+        eric.addNotes("notes3");
+
+        String returned = eric.getNotes();
 
         assertTrue(returned.contains("notes1"));
         assertTrue(returned.contains("notes2"));
@@ -73,10 +79,9 @@ public class ContactTest {
 
     @Test
     public void testContactUniqueIds() {
-        Contact jim = new ContactImpl("name", "jim");
-        Contact mike = new ContactImpl("name", "mike");
+        Contact jorge = new ContactImpl("jorge", "notes");
+        Contact eric = new ContactImpl("eric", "notes");
 
-        assertThat(jim.getId(), is(not(equalTo(mike.getId()))));
+        assertThat(jorge.getId(), is(not(equalTo(eric.getId()))));
     }
-
 }

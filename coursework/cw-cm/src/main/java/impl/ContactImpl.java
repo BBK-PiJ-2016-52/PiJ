@@ -10,28 +10,29 @@ import java.io.Serializable;
 public class ContactImpl implements Contact, Serializable{
     private String name;
     private int id;
-    private String notes;
-    private ContactManagerImpl contactManager;
+    private String notes = "";
+    private static int idCounter = 0;
+    private int contactId;
 
-    ContactImpl(){
-
-    }
+    public ContactImpl(){
+  }
 
     public ContactImpl(String name, String notes) {
         this.notes = notes;
         this.name = name;
+        idCounter++;
+        contactId = idCounter;
     }
 
-    public ContactImpl(int id, String name, String notes){
+    ContactImpl(int id, String name, String notes){
         this.id = id;
         this.notes = notes;
         this.name = name;
-        contactManager.contactIdCount++;
     }
 
     @Override
-    public int getId() {
-        return this.id;
+    public final int getId() {
+        return contactId;
     }
 
     @Override
@@ -41,7 +42,7 @@ public class ContactImpl implements Contact, Serializable{
 
     @Override
     public String getNotes() {
-            return this.notes;
+            return notes;
     }
 
     @Override
