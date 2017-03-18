@@ -55,7 +55,6 @@ public class MeetingTest {
     public void testContactsImmutableFromOutsideObject() {
         Meeting meeting = new MeetingImpl(nowDate, contacts);
         Set<Contact> contacts = meeting.getContacts();
-        //contacts.add(new MockContactImpl());
         assertFalse(contacts.size() == meeting.getContacts().size());
     }
 

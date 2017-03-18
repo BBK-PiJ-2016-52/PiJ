@@ -11,7 +11,7 @@ import java.util.Set;
  */
 public class MeetingImpl implements Meeting {
     private int id;
-    private Calendar date;
+    private final Calendar date;
     private Set<Contact> contacts;
     private static int idCounter = 0;
     private int meetingId;
@@ -36,7 +36,8 @@ public class MeetingImpl implements Meeting {
 
     @Override
     public Calendar getDate() {
-        return this.date;
+        // Returning the cloned date so the object cannot be modified as per final initial state declared
+        return (Calendar) this.date.clone();
     }
 
     @Override
