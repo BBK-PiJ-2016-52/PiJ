@@ -4,6 +4,8 @@ import spec.Contact;
 import spec.Meeting;
 
 import java.util.Calendar;
+import java.util.Collections;
+import java.util.HashSet;
 import java.util.Set;
 
 /**
@@ -12,7 +14,8 @@ import java.util.Set;
 public class MeetingImpl implements Meeting {
     private int id;
     private final Calendar date;
-    private Set<Contact> contacts;
+    private static Set<Contact> contacts = new HashSet<>();
+
     private static int idCounter = 0;
     private int meetingId;
 
@@ -26,7 +29,6 @@ public class MeetingImpl implements Meeting {
     public MeetingImpl(int id, Set<Contact> contacts, Calendar date) {
         this.contacts = contacts;
         this.date = date;
-        this.id = id;
     }
 
     @Override
@@ -42,6 +44,6 @@ public class MeetingImpl implements Meeting {
 
     @Override
     public Set<Contact> getContacts() {
-        return this.contacts;
+        return contacts;
     }
 }

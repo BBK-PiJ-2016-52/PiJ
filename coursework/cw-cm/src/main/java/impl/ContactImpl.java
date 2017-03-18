@@ -17,6 +17,9 @@ public class ContactImpl implements Contact, Serializable{
     public ContactImpl(){
   }
 
+    public ContactImpl(String name){
+    }
+
     public ContactImpl(String name, String notes) {
         this.notes = notes;
         this.name = name;
@@ -28,10 +31,13 @@ public class ContactImpl implements Contact, Serializable{
         this.id = id;
         this.notes = notes;
         this.name = name;
+        idCounter++;
+        contactId = idCounter;
     }
 
     @Override
     public final int getId() {
+        System.out.println(contactId);
         return contactId;
     }
 
