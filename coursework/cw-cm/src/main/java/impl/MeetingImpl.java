@@ -13,10 +13,14 @@ public class MeetingImpl implements Meeting {
     private int id;
     private Calendar date;
     private Set<Contact> contacts;
+    private static int idCounter = 0;
+    private int meetingId;
 
     public MeetingImpl(Calendar date, Set<Contact> contacts) {
         this.date = date;
         this.contacts = contacts;
+        idCounter++;
+        meetingId = idCounter;
     }
 
     public MeetingImpl(int id, Set<Contact> contacts, Calendar date) {
@@ -27,7 +31,7 @@ public class MeetingImpl implements Meeting {
 
     @Override
     public int getId() {
-        return this.id;
+        return meetingId;
     }
 
     @Override
