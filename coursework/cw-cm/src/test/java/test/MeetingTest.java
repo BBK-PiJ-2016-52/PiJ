@@ -1,7 +1,6 @@
 package test;
 
 import impl.MeetingImpl;
-//import impl.MockContactImpl;
 import org.junit.Before;
 import org.junit.Test;
 import spec.Contact;
@@ -16,13 +15,13 @@ import static org.junit.Assert.*;
 
 public class MeetingTest {
 
-    Calendar nowDate;
-    Set<Contact> contacts;
+    private Calendar nowDate;
+    private Set<Contact> contacts;
 
     @Before
     public void setUp() {
         nowDate = Calendar.getInstance();
-        contacts = new HashSet<Contact>();
+        contacts = new HashSet<>();
     }
 
     @Test
@@ -63,6 +62,6 @@ public class MeetingTest {
     public void testContactsImmutableFromOutsideObject() {
         Meeting meeting = new MeetingImpl(nowDate, contacts);
         Set<Contact> contacts = meeting.getContacts();
-        assertFalse(contacts.size() == meeting.getContacts().size());
+        assertFalse(contacts.size() != meeting.getContacts().size());
     }
 }

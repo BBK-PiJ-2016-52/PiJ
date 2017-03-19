@@ -4,7 +4,6 @@ import spec.Contact;
 import spec.Meeting;
 
 import java.util.Calendar;
-import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -22,7 +21,7 @@ public class MeetingImpl implements Meeting {
 
     public MeetingImpl(Calendar date, Set<Contact> contacts) {
         this.date = date;
-        this.contacts = contacts;
+        MeetingImpl.contacts = contacts;
         int idCounter = 0;
         idCounter++;
         meetingId = idCounter;

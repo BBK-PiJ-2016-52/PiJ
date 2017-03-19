@@ -1,11 +1,9 @@
 package test;
 
-import impl.MeetingImpl;
 import impl.PastMeetingImpl;
 import org.junit.Before;
 import org.junit.Test;
 import spec.Contact;
-import spec.PastMeeting;
 
 import java.util.Calendar;
 import java.util.HashSet;
