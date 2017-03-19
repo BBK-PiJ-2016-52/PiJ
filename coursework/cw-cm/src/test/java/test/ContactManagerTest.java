@@ -85,7 +85,6 @@ public class ContactManagerTest {
         Set<Contact> expectedContacts = contactManager.getContacts("m");
         Iterator<Contact> it = expectedContacts.iterator();
         int firstId = it.next().getId();
-        System.out.println(firstId);
         int secondId = it.next().getId();
         Set<Contact> returnedContacts = contactManager.getContacts(firstId, secondId);
 
@@ -110,6 +109,7 @@ public class ContactManagerTest {
         contactManager.addNewContact("mike", "notes");
         Set<Contact> outsideContactSet = new HashSet<>();
         outsideContactSet.add(new ContactImpl("sue", "notes"));
+        System.out.println(outsideContactSet);
 
         try {
             contactManager.addFutureMeeting(outsideContactSet, futureDate);

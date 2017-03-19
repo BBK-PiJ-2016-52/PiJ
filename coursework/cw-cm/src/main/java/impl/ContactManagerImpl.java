@@ -22,11 +22,8 @@ public class ContactManagerImpl implements ContactManager, Serializable{
     public int addFutureMeeting(Set<Contact> contacts, Calendar date) throws IllegalArgumentException,
     NullPointerException {
 
-       // Objects.requireNonNull(contacts, "contacts is required cannot be null.");
-        //Objects.requireNonNull(date, "Date is required cannot be null.");
-
-        for (Contact c : contacts) {
-            if (!contacts.contains(c)) {
+        for (Iterator<Contact> it = contacts.iterator();it.hasNext();) {
+            if (!contacts.contains(it)) {
                 throw new IllegalArgumentException("Contact not found/exist.");
             }
         }
