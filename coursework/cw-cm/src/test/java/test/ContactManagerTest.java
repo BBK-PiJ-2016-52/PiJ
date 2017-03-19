@@ -135,6 +135,7 @@ public class ContactManagerTest {
     public void testGetFutureMeetingListContactNotFoundThrowsException() {
         contactManager.addNewContact("mike", "notes");
         Set<Contact> mikeSet = contactManager.getContacts("mike");
+        //TODO: 19/03/07
         contactManager.addFutureMeeting(mikeSet, futureDate);
 
         Contact sue = new ContactImpl("sue", "notes");
