@@ -232,14 +232,23 @@ public class ContactManagerImpl implements Serializable, ContactManager {
         }
     }
 
+  /**
+   * Constructor that returns a set containing the contacts that correspond to the IDs.
+   * Note that this method can be used to retrieve just one contact by passing only one ID.
+   *
+   * @param ids an arbitrary number of contact IDs
+   * @return a set containing the contacts that correspond to the IDs.
+   * @throws IllegalArgumentException if no IDs are provided or if
+   *                                  any of the provided IDs does not correspond to a real contact
+   */
     @Override
     public Set<Contact> getContacts(int... ids) throws IllegalArgumentException {
         if (ids.length == 0) {
             throw new IllegalArgumentException("ids not provided.");
         }
         Set<Contact> resultSet = contacts.stream()
-                .filter(p -> (Arrays.stream(ids).anyMatch(i -> i == p.getId())))
-                .sorted(Comparator.comparing(Contact::getId))
+                .filter(p -> (Arrays.stream(ids).anyMatch(i -> i == p.getId())))// Filters the ids with match on any ids
+                .sorted(Comparator.comparing(Contact::getId))//Sort by Id
                 .collect(Collectors.toSet());
         if (resultSet.size() != ids.length) {
             throw new IllegalArgumentException("IDs does not correspond to a real contact");
@@ -248,8 +257,13 @@ public class ContactManagerImpl implements Serializable, ContactManager {
         }
     }
 
-
-    @Override
+  /**
+   * Save all data to disk.
+   * <p>
+   * This method must be executed when the program is
+   * closed and when/if the user requests it, but currently doesn't
+   */
+  @Override
     public void flush() {
         File file = new File("contacts.txt");
 
