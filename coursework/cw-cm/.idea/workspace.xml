@@ -5,14 +5,9 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_annotations_3_0_1.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_3_0_1.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_jcip_jcip_annotations_1_0.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/impl/ContactManagerImpl.java" afterPath="$PROJECT_DIR$/src/main/java/impl/ContactManagerImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/impl/MeetingImpl.java" afterPath="$PROJECT_DIR$/src/main/java/impl/MeetingImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/impl/PastMeetingImpl.java" afterPath="$PROJECT_DIR$/src/main/java/impl/PastMeetingImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/spec/Contact.java" afterPath="$PROJECT_DIR$/src/main/java/spec/Contact.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/spec/Meeting.java" afterPath="$PROJECT_DIR$/src/main/java/spec/Meeting.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/spec/PastMeeting.java" afterPath="$PROJECT_DIR$/src/main/java/spec/PastMeeting.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/findbugs/main.xml" afterPath="$PROJECT_DIR$/build/reports/findbugs/main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/spec/ContactManager.java" afterPath="$PROJECT_DIR$/src/main/java/spec/ContactManager.java" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -119,7 +114,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ContactManagerImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ContactManagerImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/impl/ContactManagerImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
@@ -127,6 +122,16 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ContactManager.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/spec/ContactManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="156" column="29" lean-forward="false" selection-start-line="156" selection-start-column="29" selection-end-line="156" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -458,7 +463,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/test/java/test/ArrayChecker.java" />
-        <option value="$PROJECT_DIR$/src/main/java/spec/ContactManager.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/test/java/test/PastMeetingTestTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/FutureMeetingTestTest.java" />
@@ -477,6 +481,7 @@
         <option value="$PROJECT_DIR$/src/main/java/impl/MeetingImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/impl/PastMeetingImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/impl/ContactManagerImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/spec/ContactManager.java" />
       </list>
     </option>
   </component>
@@ -1330,7 +1335,7 @@
       <workItem from="1489849068632" duration="26042000" />
       <workItem from="1489898627348" duration="978000" />
       <workItem from="1489899621340" duration="35190000" />
-      <workItem from="1489958553335" duration="6851000" />
+      <workItem from="1489958553335" duration="7094000" />
     </task>
     <task id="LOCAL-00001" summary="Following TDD:  Passed 3 first test of ContactManager">
       <created>1489396750648</created>
@@ -1479,7 +1484,14 @@
       <option name="project" value="LOCAL" />
       <updated>1489964189480</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Making final adjust prior submission.">
+      <created>1489965429480</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1489965429480</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1515,7 +1527,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="161768000" />
+    <option name="totallyTimeSpent" value="162011000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1528,7 +1540,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1552,7 +1564,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286991" sideWeight="0.49786553" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286991" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286991" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20757738" sideWeight="0.49652433" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20757738" sideWeight="0.49652433" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32870865" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20757738" sideWeight="0.50347567" order="6" side_tool="true" content_ui="tabs" />
@@ -1649,7 +1661,8 @@
     <MESSAGE value="Executing checkstyle and correcting typos, indents." />
     <MESSAGE value="Ran chekstyle and tracked down more than 300 errors." />
     <MESSAGE value="Deleted almost all reindent errors and bugs." />
-    <option name="LAST_COMMIT_MESSAGE" value="Deleted almost all reindent errors and bugs." />
+    <MESSAGE value="Making final adjust prior submission." />
+    <option name="LAST_COMMIT_MESSAGE" value="Making final adjust prior submission." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1957,14 +1970,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/spec/ContactManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19">
-          <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/test/ContactManagerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-9">
@@ -2086,6 +2091,14 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/spec/ContactManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="156" column="29" lean-forward="false" selection-start-line="156" selection-start-column="29" selection-end-line="156" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
