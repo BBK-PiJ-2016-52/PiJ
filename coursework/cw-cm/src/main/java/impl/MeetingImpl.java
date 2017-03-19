@@ -3,6 +3,7 @@ package impl;
 import spec.Contact;
 import spec.Meeting;
 
+import java.io.Serializable;
 import java.util.Calendar;
 import java.util.HashSet;
 import java.util.Set;
@@ -12,7 +13,7 @@ import java.util.Set;
  *
  * An implementation of Meeting interface.
  */
-public class MeetingImpl implements Meeting {
+public class MeetingImpl implements Meeting , Serializable {
     private int id;
     private final Calendar date;
     private static Set<Contact> contacts = new HashSet<>();

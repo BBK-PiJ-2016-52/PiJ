@@ -28,10 +28,10 @@ import java.util.stream.Collectors;
  */
 
 /**
- *
+ * @see ContactManager
+ * <p>Class to manage contacts and meetings.</p>
  */
 public class ContactManagerImpl implements Serializable, ContactManager {
-
     private Set<Contact> contacts = new HashSet<>();
     private List<FutureMeeting> futureMeeting = new ArrayList<>();
     private List<PastMeeting> pastMeetingList = new ArrayList<>();
@@ -43,16 +43,25 @@ public class ContactManagerImpl implements Serializable, ContactManager {
     private Calendar futureDate = Calendar.getInstance();
 
 
+    /**
+     * A constructor to add a new meeting to be held in the future.
+     * @param contacts a set of contacts that will participate in the meeting
+     * @param date     the date on which the meeting will take place
+     * @return meetingImpl.getId().
+     * @throws IllegalArgumentException if the meeting is set for a time
+     *                                  in the past, of if any contact is unknown / non-existent.
+     * @throws NullPointerException     if the meeting or the date are null
+     */
     @Override
     public int addFutureMeeting(Set<Contact> contacts, Calendar date) throws IllegalArgumentException,
             NullPointerException {
-
+      // loop to determine whether the contacts are found in the set.
         for (Iterator<Contact> it = contacts.iterator(); it.hasNext();) {
             if (!contacts.contains(it)) {
                 throw new IllegalArgumentException("Contact not found/exist.");
             }
         }
-
+        //When the contact exists or the date is not null the date is compared to the one to be held in the future.
         if (!contacts.isEmpty() || date != null) {
             if (date.after(nowDate)) {
                 MeetingImpl meetingImpl = new FutureMeetingImpl(meetingId + 1, contacts, date);
@@ -67,8 +76,16 @@ public class ContactManagerImpl implements Serializable, ContactManager {
         }
     }
 
-    @Override
+  /**
+   *
+   * @param id the ID for the meeting.
+   * @return the meeting with the requested ID.
+   * @throws IllegalStateException when the meeting id is happening in the futureDate.
+   * @throws StackOverflowError when the id is null(notice that id is now Integer).
+   */
+  @Override
     public PastMeeting getPastMeeting(int id) throws IllegalStateException, StackOverflowError {
+      MeetingImpl meetingImpl = new PastMeetingImpl(meetingId + 1, contacts, futureDate);
 
         Meeting pastMeeting = getMeeting(id);
         if (pastMeeting == null) {
@@ -76,16 +93,25 @@ public class ContactManagerImpl implements Serializable, ContactManager {
         }
         Integer intObj = new Integer(id);
         if(id < 0){
-            intObj = null;
+          intObj = null;
         }
         if (intObj == null) {
             throw new StackOverflowError("Id cannot be null.");
         }
+        if(nowDate.after(futureDate)){
+          throw new IllegalStateException("The meeting cannot be in the future.");
+        }
         return (PastMeeting) pastMeeting;
     }
 
+  /**
+   * Constructor that checks if the meeting have happened at a past time.
+   * @param id the ID for the meeting.
+   * @return the meeting with the requested ID or null when the meetingid is null.
+   * @throws IllegalArgumentException when the meeting has an id in the past.
+   */
     @Override
-    public FutureMeeting getFutureMeeting(int id) {
+    public FutureMeeting getFutureMeeting(int id) throws IllegalArgumentException {
         Meeting futureMeeting = getMeeting(id);
         if (futureMeeting == null) {
             return null;
@@ -95,7 +121,7 @@ public class ContactManagerImpl implements Serializable, ContactManager {
                     return (FutureMeeting) futureMeeting;
                 }
             } else {
-                throw new IllegalArgumentException("None id for future meeting.");
+                throw new IllegalArgumentException("Id is happening in the past.");
             }
             return null;
         }

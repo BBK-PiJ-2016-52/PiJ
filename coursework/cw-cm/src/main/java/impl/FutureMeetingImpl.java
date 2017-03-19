@@ -12,15 +12,15 @@ import java.util.Set;
  *
  * An implementation of the FutureMeeting interface.
  */
-public class FutureMeetingImpl extends MeetingImpl implements FutureMeeting, Serializable{
+public class FutureMeetingImpl extends MeetingImpl implements FutureMeeting , Serializable {
 
 	/**
-	 *
-	 * @param id
-	 * @param contacts
-	 * @param date
+	 * Constructor for the Future Meeeting.
+	 * @param id the id for the future meeting.
+	 * @param contacts a set of contacts for the future meeting.
+	 * @param date the date for the future meeting.
 	 */
-	FutureMeetingImpl(int id, Set<Contact> contacts, Calendar date) {
+	public FutureMeetingImpl(int id, Set<Contact> contacts, Calendar date) {
 		super(id, contacts, date);
 	}
 }

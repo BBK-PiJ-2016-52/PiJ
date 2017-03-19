@@ -3,13 +3,14 @@ package impl;
 import spec.Contact;
 import spec.PastMeeting;
 
+import java.io.Serializable;
 import java.util.Calendar;
 import java.util.Set;
 
 /**
  * Created by Eric on 08/03/2017.
  */
-public class PastMeetingImpl extends MeetingImpl implements PastMeeting {
+public class PastMeetingImpl extends MeetingImpl implements PastMeeting , Serializable {
     private String notes = "";
 
     public PastMeetingImpl(Integer id, Set<Contact> contacts, Calendar date) {

@@ -368,8 +368,7 @@ public class ContactManagerTest {
     @Test
     public void testGetPastMeetingByIdThrowsException() {
         contactManager.addNewContact("mike", "notes");
-        Set<Contact> mikeSet = contactManager.getContacts("mike");
-        int futureMeetingId = contactManager.addFutureMeeting(mikeSet, futureDate);
+        int futureMeetingId = contactManager.addFutureMeeting(contactManagerImpl.getContacts(), futureDate);
 
         try {
             contactManager.getPastMeeting(futureMeetingId);
@@ -399,9 +398,13 @@ public class ContactManagerTest {
 
     @Test
     public void testGetFutureMeetingByIdReturnsNullIfNone() {
-        FutureMeeting returnedMeeting = contactManager.getFutureMeeting(100);
-
-        assertThat(returnedMeeting, is(nullValue()));
+      try {
+        FutureMeeting returnedMeeting = contactManager.getFutureMeeting(-1);
+        fail();
+      } catch (IllegalArgumentException e) {
+        e.printStackTrace();
+      }
+      //assertThat(returnedMeeting, is(nullValue()));
     }
 
     @Test
