@@ -4,9 +4,9 @@ import java.util.Calendar;
 import java.util.Set;
 
 /**
- * A class to represent meetings
+ * A class to represent meetings.
  * <p>
- * Meetings have unique IDs, scheduled date and a list of participating contacts
+ * Meetings have unique IDs, scheduled date and a list of participating contacts.
  */
 public interface Meeting {
     /**

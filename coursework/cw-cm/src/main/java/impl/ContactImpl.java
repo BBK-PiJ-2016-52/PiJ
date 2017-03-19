@@ -11,11 +11,11 @@ public class ContactImpl implements Contact, Serializable{
     private String name;
     private int id;
     private String notes = "";
-    private static int idCounter = 0;
+    private int idCounter = 0;
     private int contactId;
 
     public ContactImpl(){
-  }
+    }
 
     public ContactImpl(String name){
     }
@@ -28,11 +28,11 @@ public class ContactImpl implements Contact, Serializable{
     }
 
     ContactImpl(int id, String name, String notes){
-        this.id = id;
         this.notes = notes;
         this.name = name;
         idCounter++;
-        contactId = idCounter;
+        contactId += idCounter;
+        this.id = contactId;
     }
 
     @Override
@@ -48,7 +48,7 @@ public class ContactImpl implements Contact, Serializable{
 
     @Override
     public String getNotes() {
-            return notes;
+        return notes;
     }
 
     @Override

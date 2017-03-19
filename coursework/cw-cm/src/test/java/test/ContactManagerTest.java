@@ -57,7 +57,7 @@ public class ContactManagerTest {
         contactManager.addNewContact("kevin", "notes");
 
         Set<Contact> expectMike = contactManager.getContacts("mike");
-        Set<Contact> expectBoth = contactManager.getContacts("ke");
+        Set<Contact> expectBoth = contactManager.getContacts("mike"+"kevin");
         Set<Contact> expectNone = contactManager.getContacts("sue");
 
         assertEquals(1, expectMike.size());
@@ -83,9 +83,9 @@ public class ContactManagerTest {
         contactManager.addNewContact("mike", "notes");
 
         Set<Contact> expectedContacts = contactManager.getContacts("m");
-        System.out.println(expectedContacts);
         Iterator<Contact> it = expectedContacts.iterator();
         int firstId = it.next().getId();
+        System.out.println(firstId);
         int secondId = it.next().getId();
         Set<Contact> returnedContacts = contactManager.getContacts(firstId, secondId);
 
@@ -590,9 +590,7 @@ public class ContactManagerTest {
 
         ObjectOutputStream encode = null;
         try {
-            encode = new ObjectOutputStream(
-                    new BufferedOutputStream(
-                            new FileOutputStream("specific_test.txt")));
+            encode = new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream("specific_test.txt")));
         } catch (FileNotFoundException e) {
             System.err.println("encoding... " + e);
         } catch (IOException e1) {

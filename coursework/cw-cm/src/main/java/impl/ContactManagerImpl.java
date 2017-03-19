@@ -20,7 +20,7 @@ public class ContactManagerImpl implements ContactManager, Serializable{
 
     @Override
     public int addFutureMeeting(Set<Contact> contacts, Calendar date) throws IllegalArgumentException,
-            NullPointerException {
+    NullPointerException {
 
        // Objects.requireNonNull(contacts, "contacts is required cannot be null.");
         //Objects.requireNonNull(date, "Date is required cannot be null.");
@@ -58,8 +58,19 @@ public class ContactManagerImpl implements ContactManager, Serializable{
 
     @Override
     public FutureMeeting getFutureMeeting(int id) {
-        return null;
-    }
+        Meeting futureMeeting = getMeeting(id);
+        if (futureMeeting == null) {
+            return null;
+        } else {
+            if (futureMeeting instanceof FutureMeeting) {
+                if (futureMeeting.getDate().after(nowDate)) {
+                    return (FutureMeeting) futureMeeting;
+                }
+            } else {
+                throw new IllegalArgumentException("None id for future meeting.");
+            }
+            return null;
+        }    }
 
     @Override
     public Meeting getMeeting(int id) throws IllegalStateException{
@@ -105,7 +116,7 @@ public class ContactManagerImpl implements ContactManager, Serializable{
         Objects.requireNonNull(name, "Name is required cannot be null.");
         Objects.requireNonNull(notes, "Notes is required cannot be null.");
 
-        if (name.equals("") || notes.equals("") || name.equals(null) || notes.equals(null)) {
+        if (name.equals("") || notes.equals("")) {
             throw new IllegalArgumentException("Passed an empty String parameter.");
         }
         Contact newContact = new ContactImpl(name,notes);
@@ -121,9 +132,9 @@ public class ContactManagerImpl implements ContactManager, Serializable{
             return contacts;
         } else{
             return contacts.parallelStream()
-                    .filter(i -> i.getName().equals(name))
-                    .sorted(Comparator.comparing(Contact::getId))
-                    .collect(Collectors.toSet());
+            .filter(i -> i.getName().contains(name))
+            .sorted(Comparator.comparing(Contact::getId))
+            .collect(Collectors.toSet());
         }
     }
 
@@ -133,9 +144,9 @@ public class ContactManagerImpl implements ContactManager, Serializable{
             throw new IllegalArgumentException("ids not provided.");
         }
         Set<Contact> resultSet = contacts.stream()
-                .filter(p -> (Arrays.stream(ids).anyMatch(i -> i == p.getId())) )
-                .sorted(Comparator.comparing(Contact::getId))
-                .collect(Collectors.toSet());
+        .filter(p -> (Arrays.stream(ids).anyMatch(i -> i == p.getId())) )
+        .sorted(Comparator.comparing(Contact::getId))
+        .collect(Collectors.toSet());
         if (resultSet.size() != ids.length ) {
             throw new IllegalArgumentException("IDs does not correspond to a real contact");
         } else {
@@ -147,11 +158,15 @@ public class ContactManagerImpl implements ContactManager, Serializable{
     @Override
     public void flush() {
         File file = new File("contacts.txt");
-        try (BufferedReader in = new BufferedReader(new FileReader(file))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
+            String line = null;
+            while ((line = reader.readLine()) != null) {
+                System.out.println(line);
+            }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-}
+    }

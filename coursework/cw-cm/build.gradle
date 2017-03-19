@@ -9,6 +9,21 @@ targetCompatibility = 1.8
 
 findbugs.toolVersion = '3.0.1'
 
+findbugs {
+    ignoreFailures = true
+}
+
+task checkFindBugsReport << {
+    def xmlReport = findbugsMain.reports.xml
+    def slurped = new XmlSlurper().parse(xmlReport.destination)
+    def bugsFound = slurped.BugInstance.size()
+    if (bugsFound > 0) {
+        throw new GradleException("$bugsFound FindBugs rule violations were found. See the report at: $xmlReport.destination")
+    }
+}
+
+findbugsMain.finalizedBy checkFindBugsReport
+
 repositories {
     mavenCentral()
 }
@@ -16,4 +31,22 @@ repositories {
 dependencies {
     compile 'com.google.code.findbugs:annotations:3.0.1'
     testCompile 'junit:junit:4.12'
-}   
+}
+
+checkstyle {
+    toolVersion = '7.6'
+    sourceSets = [sourceSets.main]
+    configFile = rootProject.file("config/checkstyle/checkstyle.xml");
+    showViolations = true
+    ignoreFailures = true
+}
+
+checkstyleTest {
+    enabled = true
+}
+
+tasks.withType(Checkstyle) {
+    reports {
+        html.destination rootProject.file("build/reports/checkstyle.html")
+    }
+}

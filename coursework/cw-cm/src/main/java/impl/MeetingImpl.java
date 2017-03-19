@@ -10,18 +10,20 @@ import java.util.Set;
 
 /**
  * Created by Eric on 08/03/2017.
+ *
+ * An implementation of Meeting interface.
  */
 public class MeetingImpl implements Meeting {
     private int id;
     private final Calendar date;
     private static Set<Contact> contacts = new HashSet<>();
 
-    private static int idCounter = 0;
     private int meetingId;
 
     public MeetingImpl(Calendar date, Set<Contact> contacts) {
         this.date = date;
         this.contacts = contacts;
+        int idCounter = 0;
         idCounter++;
         meetingId = idCounter;
     }
