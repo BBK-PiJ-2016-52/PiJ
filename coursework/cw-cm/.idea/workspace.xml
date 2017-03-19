@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1eedbdb7-0e6a-4b17-96c3-f8e6cf0559e2" name="Default" comment="TDD: Passed testAddNewPastMeetingContactNullContactThrowsException">
+    <list default="true" id="1eedbdb7-0e6a-4b17-96c3-f8e6cf0559e2" name="Default" comment="Deleted almost all reindent errors and bugs.">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_annotations_3_0_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_3_0_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_jcip_jcip_annotations_1_0.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/impl/ContactManagerImpl.java" afterPath="$PROJECT_DIR$/src/main/java/impl/ContactManagerImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/impl/MeetingImpl.java" afterPath="$PROJECT_DIR$/src/main/java/impl/MeetingImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/impl/PastMeetingImpl.java" afterPath="$PROJECT_DIR$/src/main/java/impl/PastMeetingImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/test/ContactManagerTest.java" afterPath="$PROJECT_DIR$/src/test/java/test/ContactManagerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/spec/Contact.java" afterPath="$PROJECT_DIR$/src/main/java/spec/Contact.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/spec/Meeting.java" afterPath="$PROJECT_DIR$/src/main/java/spec/Meeting.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/spec/PastMeeting.java" afterPath="$PROJECT_DIR$/src/main/java/spec/PastMeeting.java" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -111,141 +118,50 @@
     <favorites_list name="cw-cm" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.49573106">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="ContactManagerImpl.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/impl/ContactManagerImpl.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="129" column="44" lean-forward="true" selection-start-line="129" selection-start-column="44" selection-end-line="129" selection-end-column="44" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#3919#3920#0" expanded="true" />
-                    <element signature="e#3946#3947#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ContactImpl.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/impl/ContactImpl.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="414">
-                  <caret line="30" column="27" lean-forward="false" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="FutureMeetingImpl.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/impl/FutureMeetingImpl.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="234">
-                  <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-                  <folding>
-                    <element signature="e#397#398#0" expanded="true" />
-                    <element signature="e#429#430#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="PastMeetingImpl.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/impl/PastMeetingImpl.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="288">
-                  <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-                  <folding>
-                    <element signature="e#333#334#0" expanded="true" />
-                    <element signature="e#374#375#0" expanded="true" />
-                    <element signature="e#442#443#0" expanded="true" />
-                    <element signature="e#479#480#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="MeetingImpl.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/impl/MeetingImpl.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="206">
-                  <caret line="22" column="10" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="ContactManagerTest.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/test/java/test/ContactManagerTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="471">
-                  <caret line="242" column="67" lean-forward="false" selection-start-line="242" selection-start-column="16" selection-end-line="242" selection-end-column="67" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="method#testAddNewContactNullNameThrowsException#0;class#ContactManagerTest#0" expanded="false" />
-                    <element signature="method#testAddNewContactNullNotesThrowsException#0;class#ContactManagerTest#0" expanded="false" />
-                    <element signature="method#testGetContactsFromName#0;class#ContactManagerTest#0" expanded="false" />
-                    <element signature="method#testGetContactsFromNameThrowsException#0;class#ContactManagerTest#0" expanded="false" />
-                    <element signature="method#testGetContactsFromIdsNotFoundThrowsException#0;class#ContactManagerTest#0" expanded="false" />
-                    <element signature="method#testAddFutureMeetingContactNotFoundThrowsException#0;class#ContactManagerTest#0" expanded="false" />
-                    <element signature="method#testAddFutureMeetingPastDateThrowsException#0;class#ContactManagerTest#0" expanded="false" />
-                    <element signature="method#testAddFutureDateReturnsId#0;class#ContactManagerTest#0" expanded="false" />
-                    <element signature="method#testGetPastMeetingListContactNotFoundThrowsException#0;class#ContactManagerTest#0" expanded="false" />
-                    <element signature="method#testGetPastMeetingListReturnsMeeting#0;class#ContactManagerTest#0" expanded="false" />
-                    <element signature="method#testGetPastMeetingListSorted#0;class#ContactManagerTest#0" expanded="false" />
-                    <element signature="method#testGetFutureMeetingListByDateReturnsFutureMeetings#0;class#ContactManagerTest#0" expanded="false" />
-                    <element signature="method#testGetFutureMeetingListByDateReturnsPastMeetings#0;class#ContactManagerTest#0" expanded="false" />
-                    <element signature="method#testGetPastMeetingByIdThrowsException#0;class#ContactManagerTest#0" expanded="false" />
-                    <element signature="method#testGetPastMeetingByIdReturn#0;class#ContactManagerTest#0" expanded="false" />
-                    <element signature="method#testGetFutureMeetingByIdReturnsNullIfNone#0;class#ContactManagerTest#0" expanded="false" />
-                    <element signature="method#testGetFutureMeetingByIdThrowsException#0;class#ContactManagerTest#0" expanded="false" />
-                    <element signature="method#testGetFutureMeetingByIdReturn#0;class#ContactManagerTest#0" expanded="false" />
-                    <element signature="method#testGetMeetingByIdReturnsNullIfNone#0;class#ContactManagerTest#0" expanded="false" />
-                    <element signature="method#testGetMeetingByIdReturnsPastMeeting#0;class#ContactManagerTest#0" expanded="false" />
-                    <element signature="method#testGetMeetingByIdReturnsFutureMeeting#0;class#ContactManagerTest#0" expanded="false" />
-                    <element signature="method#testAddMeetingNotesThrowsNullPointerException#0;class#ContactManagerTest#0" expanded="false" />
-                    <element signature="method#testAddMeetingNotesThrowsIllegalStateException#0;class#ContactManagerTest#0" expanded="false" />
-                    <element signature="method#testAddMeetingNotesThrowsIllegalArgumentException#0;class#ContactManagerTest#0" expanded="false" />
-                    <element signature="method#testAddMeetingNotesAddNotesToPastMeeting#0;class#ContactManagerTest#0" expanded="false" />
-                    <element signature="method#testAddMeetingNotesConvertsFutureMeetingToPastMeetingAndAddsNotes#0;class#ContactManagerTest#0" expanded="false" />
-                    <element signature="method#testConstructorLoadsFromFile#0;class#ContactManagerTest#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="MeetingTest.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/test/MeetingTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="583">
-                  <caret line="58" column="27" lean-forward="false" selection-start-line="58" selection-start-column="27" selection-end-line="58" selection-end-column="27" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="PastMeetingTest.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/test/PastMeetingTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-126">
-                  <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ContactManagerImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/impl/ContactManagerImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="257" column="8" lean-forward="false" selection-start-line="257" selection-start-column="8" selection-end-line="257" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PastMeetingImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/impl/PastMeetingImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="19" column="2" lean-forward="false" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#478#479#0" expanded="true" />
+                <element signature="e#509#510#0" expanded="true" />
+                <element signature="e#551#552#0" expanded="true" />
+                <element signature="e#573#574#0" expanded="true" />
+                <element signature="e#612#613#0" expanded="true" />
+                <element signature="e#635#636#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MeetingImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/impl/MeetingImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="24" column="4" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -261,36 +177,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>addnotes</find>
-      <find>notes</find>
-      <find>ContactImpl</find>
-      <find>addNewContact</find>
-      <find>added</find>
-      <find>getId</find>
-      <find>addNotes</find>
-      <find>addno</find>
-      <find>sue</find>
-      <find>thisContactID</find>
-      <find>AddNote</find>
-      <find>set</find>
-      <find>contact</find>
-      <find>addnewc</find>
-      <find>addfuturemeeting</find>
       <find>addnewcon</find>
       <find>addnewcontact</find>
       <find>addFutureMeeting</find>
       <find>futureMeetings</find>
       <find>none</find>
-      <find>getpastmeeting</find>
       <find>findbugs {    ignoreFailures = true }</find>
       <find>findbugs</find>
       <find>nowDate</find>
       <find>read</find>
-      <find>getFutureMeetingList</find>
       <find>addfuture</find>
       <find>getMeetingListOn</find>
       <find>throw new</find>
       <find>contactImpl.getId()</find>
+      <find>pastMeeting</find>
+      <find>meeting</find>
+      <find>meetingid</find>
+      <find>todo</find>
+      <find>task</find>
+      <find>addnewpastmeeting</find>
+      <find>getFutureMeetingList</find>
+      <find>getfuture</find>
+      <find>addnewpas</find>
+      <find>System.out.println</find>
+      <find>addnew</find>
+      <find>addnewpast</find>
+      <find>getpast</find>
+      <find>getpastmeeting</find>
+      <find>addfuturemeeting</find>
+      <find>overflow</find>
+      <find>ids</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -371,10 +287,6 @@
                 <option name="description" value="Assembles test classes." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="checkFindBugsReport" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Generates Javadoc API documentation for the main source code." />
@@ -507,7 +419,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="1489902335974" />
+        <entry key="$PROJECT_DIR$" value="1489946651937" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -549,20 +461,20 @@
         <option value="$PROJECT_DIR$/src/main/java/spec/ContactManager.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/test/java/test/PastMeetingTestTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/spec/PastMeeting.java" />
-        <option value="$PROJECT_DIR$/src/test/java/test/ContactTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/FutureMeetingTestTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/FutureMeetingTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/test/MeetingTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/impl/FutureMeetingImpl.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/PastMeetingTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/spec/FutureMeeting.java" />
-        <option value="$PROJECT_DIR$/src/main/java/spec/Meeting.java" />
+        <option value="$PROJECT_DIR$/src/test/java/test/ContactTest.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/java/impl/MeetingImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/impl/ContactImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/spec/Contact.java" />
+        <option value="$PROJECT_DIR$/src/test/java/test/MeetingTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/ContactManagerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/impl/ContactImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/impl/FutureMeetingImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/spec/Contact.java" />
+        <option value="$PROJECT_DIR$/src/main/java/spec/Meeting.java" />
+        <option value="$PROJECT_DIR$/src/main/java/spec/PastMeeting.java" />
+        <option value="$PROJECT_DIR$/src/main/java/impl/MeetingImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/impl/PastMeetingImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/impl/ContactManagerImpl.java" />
       </list>
@@ -603,10 +515,16 @@
           <State>
             <id>Java</id>
           </State>
+          <State>
+            <id>Javadoc issuesJava</id>
+          </State>
+          <State>
+            <id>Probable bugsJava</id>
+          </State>
         </expanded-state>
         <selected-state>
           <State>
-            <id>GroovyUnusedAssignment</id>
+            <id>JavaDoc</id>
           </State>
         </selected-state>
       </profile-state>
@@ -628,8 +546,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -699,6 +615,10 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -740,20 +660,58 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cw-cm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cw-cm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cw-cm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cw-cm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reports" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/cw-cm-master/src/main/java/impl/ContactManagerImpl.java" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="FullScreen" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.22610295" />
+    <property name="two.files.diff.last.used.file" value="$USER_HOME$/Downloads/cw-cm-master/src/main/java/impl/ContactManagerImpl.java" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -764,8 +722,8 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.cw-cm [test]">
-    <configuration default="false" name="ContactManagerTest.testAddNewPastMeetingContactNullContactThrowsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JavaScript Debug.checkstyle.html">
+    <configuration default="false" name="ContactManagerTest.testGetFutureMeetingByIdReturnsNullIfNone" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="test.*" />
@@ -777,7 +735,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="test" />
       <option name="MAIN_CLASS_NAME" value="test.ContactManagerTest" />
-      <option name="METHOD_NAME" value="testAddNewPastMeetingContactNullContactThrowsException" />
+      <option name="METHOD_NAME" value="testGetFutureMeetingByIdReturnsNullIfNone" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -791,7 +749,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="ContactManagerTest.testAddNewPastMeetingContactNullDateThrowsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="ContactManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="test.*" />
@@ -803,8 +761,8 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="test" />
       <option name="MAIN_CLASS_NAME" value="test.ContactManagerTest" />
-      <option name="METHOD_NAME" value="testAddNewPastMeetingContactNullDateThrowsException" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -817,56 +775,22 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="ContactManagerTest.testAddNewPastMeetingContactNullTextThrowsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="cw-cm_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.ContactManagerTest" />
-      <option name="METHOD_NAME" value="testAddNewPastMeetingContactNullTextThrowsException" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="ContactManagerTest.testAddNewPastMeetingContactNotFoundThrowsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="cw-cm_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.ContactManagerTest" />
-      <option name="METHOD_NAME" value="testAddNewPastMeetingContactNotFoundThrowsException" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
+    <configuration default="false" name="cw-cm [check]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="check" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
       <method />
     </configuration>
     <configuration default="false" name="cw-cm [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -885,6 +809,9 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="false" name="checkstyle.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/cw-cm/build/reports/checkstyle.html">
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -1357,24 +1284,24 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Gradle.cw-cm [:checkstyleMain]" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ContactManagerTest.testAddNewPastMeetingContactNullContactThrowsException" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ContactManagerTest.testAddNewPastMeetingContactNullDateThrowsException" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ContactManagerTest.testAddNewPastMeetingContactNullTextThrowsException" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ContactManagerTest.testAddNewPastMeetingContactNotFoundThrowsException" />
-      <item index="5" class="java.lang.String" itemvalue="Gradle.cw-cm [test]" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ContactManagerTest.testGetFutureMeetingByIdReturnsNullIfNone" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ContactManagerTest" />
+      <item index="3" class="java.lang.String" itemvalue="Gradle.cw-cm [check]" />
+      <item index="4" class="java.lang.String" itemvalue="Gradle.cw-cm [test]" />
+      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.checkstyle.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Gradle.cw-cm [test]" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ContactManagerTest.testAddNewPastMeetingContactNotFoundThrowsException" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ContactManagerTest.testAddNewPastMeetingContactNullTextThrowsException" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ContactManagerTest.testAddNewPastMeetingContactNullDateThrowsException" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ContactManagerTest.testAddNewPastMeetingContactNullContactThrowsException" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.checkstyle.html" />
+        <item index="1" class="java.lang.String" itemvalue="Gradle.cw-cm [check]" />
+        <item index="2" class="java.lang.String" itemvalue="Gradle.cw-cm [test]" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ContactManagerTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ContactManagerTest.testGetFutureMeetingByIdReturnsNullIfNone" />
       </list>
     </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
-    <option name="lastUpdateTimestamp" value="1489935817374" />
+    <option name="lastUpdateTimestamp" value="1489961337073" />
     <option name="externalProjectsViewState">
       <projects_view />
     </option>
@@ -1402,7 +1329,8 @@
       <workItem from="1489849018931" duration="35000" />
       <workItem from="1489849068632" duration="26042000" />
       <workItem from="1489898627348" duration="978000" />
-      <workItem from="1489899621340" duration="17719000" />
+      <workItem from="1489899621340" duration="35190000" />
+      <workItem from="1489958553335" duration="6851000" />
     </task>
     <task id="LOCAL-00001" summary="Following TDD:  Passed 3 first test of ContactManager">
       <created>1489396750648</created>
@@ -1516,45 +1444,80 @@
       <option name="project" value="LOCAL" />
       <updated>1489928651404</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="TDD: Passed testAddNewPastMeetingContactNullContactThrowsException, testAddNewPastMeetingContactNullDateThrowsException, testAddNewPastMeetingContactNullTextThrowsException. Implemented getFutureMeetingList, getMeetingListOn, addNewPastMeeting, addMeetingNotes(Pending (contact exists.)).">
+      <created>1489940561918</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1489940561918</updated>
+    </task>
+    <task id="LOCAL-00018" summary="TDD: Passed testGetPastMeetingByIdReturnsNullIfNone,testGetFutureMeetingListContactNotFoundThrowsException, modified getPastMeeting, addNewPastMeeting and flush.">
+      <created>1489956767572</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1489956767572</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Fixing bugs encountered shootdown from 15 to 9 apparently, keep looking for better implementation.">
+      <created>1489960828583</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1489960828583</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Executing checkstyle and correcting typos, indents.">
+      <created>1489961859520</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1489961859520</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Ran chekstyle and tracked down more than 300 errors.">
+      <created>1489964189480</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1489964189480</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ContactManagerTest_testAddNewPastMeetingContactNotFoundThrowsException - 2017.03.19 at 15h 53m 54s.xml">
-      <configuration name="ContactManagerTest.testAddNewPastMeetingContactNotFoundThrowsException" configurationId="JUnit" />
+    <history-entry file="cw-cm_[check] - 2017.03.19 at 22h 09m 26s.xml">
+      <configuration name="cw-cm [check]" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="ContactManagerTest_testAddNewPastMeetingContactNullContactThrowsException - 2017.03.19 at 15h 53m 37s.xml">
-      <configuration name="ContactManagerTest.testAddNewPastMeetingContactNullContactThrowsException" configurationId="JUnit" />
+    <history-entry file="cw-cm_[check] - 2017.03.19 at 22h 14m 14s.xml">
+      <configuration name="cw-cm [check]" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="ContactManagerTest_testAddNewPastMeetingContactNullDateThrowsException - 2017.03.19 at 15h 53m 41s.xml">
-      <configuration name="ContactManagerTest.testAddNewPastMeetingContactNullDateThrowsException" configurationId="JUnit" />
+    <history-entry file="cw-cm_[check] - 2017.03.19 at 22h 57m 56s.xml">
+      <configuration name="cw-cm [check]" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="ContactManagerTest_testAddNewPastMeetingContactNullTextThrowsException - 2017.03.19 at 15h 53m 45s.xml">
-      <configuration name="ContactManagerTest.testAddNewPastMeetingContactNullTextThrowsException" configurationId="JUnit" />
+    <history-entry file="cw-cm_[check] - 2017.03.19 at 23h 01m 19s.xml">
+      <configuration name="cw-cm [check]" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="ContactManagerTest_testGetPastMeetingByIdReturnsNullIfNone - 2017.03.19 at 15h 08m 42s.xml">
-      <configuration name="ContactManagerTest.testGetPastMeetingByIdReturnsNullIfNone" configurationId="JUnit" />
+    <history-entry file="cw-cm_[check] - 2017.03.19 at 23h 03m 56s.xml">
+      <configuration name="cw-cm [check]" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="ContactManagerTest_testGetPastMeetingByIdReturnsNullIfNone - 2017.03.19 at 15h 32m 56s.xml">
-      <configuration name="ContactManagerTest.testGetPastMeetingByIdReturnsNullIfNone" configurationId="JUnit" />
+    <history-entry file="cw-cm_[check] - 2017.03.19 at 23h 07m 58s.xml">
+      <configuration name="cw-cm [check]" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="cw-cm_[test] - 2017.03.19 at 15h 34m 35s.xml">
-      <configuration name="cw-cm [test]" configurationId="GradleRunConfiguration" />
+    <history-entry file="cw-cm_[check] - 2017.03.19 at 23h 11m 07s.xml">
+      <configuration name="cw-cm [check]" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="cw-cm_[test] - 2017.03.19 at 15h 38m 06s.xml">
-      <configuration name="cw-cm [test]" configurationId="GradleRunConfiguration" />
+    <history-entry file="cw-cm_[check] - 2017.03.19 at 23h 13m 51s.xml">
+      <configuration name="cw-cm [check]" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="cw-cm_[test] - 2017.03.19 at 16h 00m 56s.xml">
-      <configuration name="cw-cm [test]" configurationId="GradleRunConfiguration" />
+    <history-entry file="cw-cm_[check] - 2017.03.19 at 23h 16m 04s.xml">
+      <configuration name="cw-cm [check]" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="cw-cm_[test] - 2017.03.19 at 16h 19m 52s.xml">
+    <history-entry file="cw-cm_[test] - 2017.03.19 at 22h 57m 43s.xml">
       <configuration name="cw-cm [test]" configurationId="GradleRunConfiguration" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137446000" />
+    <option name="totallyTimeSpent" value="161768000" />
   </component>
-  <component name="TodoView">
+  <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -1565,42 +1528,42 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286991" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286991" sideWeight="0.50213444" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924226" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39821252" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.49786553" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.326713" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33565044" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286991" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286991" sideWeight="0.49786553" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286991" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286991" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20757738" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286991" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32870865" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20757738" sideWeight="0.49652433" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32870865" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20757738" sideWeight="0.50347567" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286991" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1609,38 +1572,56 @@
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286991" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286991" sideWeight="0.50213444" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924226" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39821252" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.49786553" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.326713" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33565044" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286991" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286991" sideWeight="0.49786553" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286991" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291262" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2054429" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291262" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32870865" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286991" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20757738" sideWeight="0.49652433" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286991" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32870865" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20757738" sideWeight="0.50347567" order="6" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -1662,11 +1643,17 @@
     <MESSAGE value="TDD: Passed testGetContactsFromIdsNotFoundThrowsException, getContact from ids. Implemented the reader from flush and getMeeting" />
     <MESSAGE value="TDD: Passed testGetContactsFromIds&#10;Fixed Indent&#10;Setup checkstyle, pmd and findbugs within gradle" />
     <MESSAGE value="TDD: Passed testAddFutureMeetingContactNotFoundThrowsException" />
-    <option name="LAST_COMMIT_MESSAGE" value="TDD: Passed testAddFutureMeetingContactNotFoundThrowsException" />
+    <MESSAGE value="TDD: Passed testAddNewPastMeetingContactNullContactThrowsException, testAddNewPastMeetingContactNullDateThrowsException, testAddNewPastMeetingContactNullTextThrowsException. Implemented getFutureMeetingList, getMeetingListOn, addNewPastMeeting, addMeetingNotes(Pending (contact exists.))." />
+    <MESSAGE value="TDD: Passed testGetPastMeetingByIdReturnsNullIfNone,testGetFutureMeetingListContactNotFoundThrowsException, modified getPastMeeting, addNewPastMeeting and flush." />
+    <MESSAGE value="Fixing bugs encountered shootdown from 15 to 9 apparently, keep looking for better implementation." />
+    <MESSAGE value="Executing checkstyle and correcting typos, indents." />
+    <MESSAGE value="Ran chekstyle and tracked down more than 300 errors." />
+    <MESSAGE value="Deleted almost all reindent errors and bugs." />
+    <option name="LAST_COMMIT_MESSAGE" value="Deleted almost all reindent errors and bugs." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="67" />
+      <option name="time" value="73" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1675,64 +1662,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/spec/Contact.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/spec/ContactManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="35" column="39" lean-forward="false" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/spec/Meeting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/impl/ContactImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/impl/ContactManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3919#3920#0" expanded="true" />
-            <element signature="e#3946#3947#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/impl/MeetingImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/ContactTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="42" column="6" lean-forward="false" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/spec/ContactManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1746,8 +1675,6 @@
           <caret line="31" column="15" lean-forward="false" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3919#3920#0" expanded="true" />
-            <element signature="e#3946#3947#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1780,8 +1707,6 @@
           <caret line="31" column="15" lean-forward="false" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3919#3920#0" expanded="true" />
-            <element signature="e#3946#3947#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1813,34 +1738,27 @@
         <state relative-caret-position="252">
           <caret line="25" column="33" lean-forward="false" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="method#testAddNewContactNullNameThrowsException#0;class#ContactManagerTest#0" expanded="false" />
             <element signature="method#testAddNewContactNullNotesThrowsException#0;class#ContactManagerTest#0" expanded="false" />
             <element signature="method#testGetContactsFromName#0;class#ContactManagerTest#0" expanded="false" />
             <element signature="method#testGetContactsFromNameThrowsException#0;class#ContactManagerTest#0" expanded="false" />
+            <element signature="method#testGetContactsFromIds#0;class#ContactManagerTest#0" expanded="false" />
             <element signature="method#testGetContactsFromIdsNotFoundThrowsException#0;class#ContactManagerTest#0" expanded="false" />
             <element signature="method#testAddFutureMeetingContactNotFoundThrowsException#0;class#ContactManagerTest#0" expanded="false" />
             <element signature="method#testAddFutureMeetingPastDateThrowsException#0;class#ContactManagerTest#0" expanded="false" />
-            <element signature="method#testAddFutureDateReturnsId#0;class#ContactManagerTest#0" expanded="false" />
-            <element signature="method#testGetPastMeetingListContactNotFoundThrowsException#0;class#ContactManagerTest#0" expanded="false" />
-            <element signature="method#testGetPastMeetingListReturnsMeeting#0;class#ContactManagerTest#0" expanded="false" />
-            <element signature="method#testGetPastMeetingListSorted#0;class#ContactManagerTest#0" expanded="false" />
-            <element signature="method#testGetFutureMeetingListByDateReturnsFutureMeetings#0;class#ContactManagerTest#0" expanded="false" />
-            <element signature="method#testGetFutureMeetingListByDateReturnsPastMeetings#0;class#ContactManagerTest#0" expanded="false" />
-            <element signature="method#testGetPastMeetingByIdThrowsException#0;class#ContactManagerTest#0" expanded="false" />
-            <element signature="method#testGetPastMeetingByIdReturn#0;class#ContactManagerTest#0" expanded="false" />
-            <element signature="method#testGetFutureMeetingByIdReturnsNullIfNone#0;class#ContactManagerTest#0" expanded="false" />
-            <element signature="method#testGetFutureMeetingByIdThrowsException#0;class#ContactManagerTest#0" expanded="false" />
-            <element signature="method#testGetFutureMeetingByIdReturn#0;class#ContactManagerTest#0" expanded="false" />
+            <element signature="method#testGetFutureMeetingListContactNotFoundThrowsException#0;class#ContactManagerTest#0" expanded="false" />
+            <element signature="method#testAddNewPastMeetingContactNotFoundThrowsException#0;class#ContactManagerTest#0" expanded="false" />
+            <element signature="method#testAddNewPastMeetingContactNullContactThrowsException#0;class#ContactManagerTest#0" expanded="false" />
+            <element signature="method#testAddNewPastMeetingContactNullDateThrowsException#0;class#ContactManagerTest#0" expanded="false" />
+            <element signature="method#testAddNewPastMeetingContactNullTextThrowsException#0;class#ContactManagerTest#0" expanded="false" />
             <element signature="method#testGetMeetingByIdReturnsNullIfNone#0;class#ContactManagerTest#0" expanded="false" />
             <element signature="method#testGetMeetingByIdReturnsPastMeeting#0;class#ContactManagerTest#0" expanded="false" />
-            <element signature="method#testGetMeetingByIdReturnsFutureMeeting#0;class#ContactManagerTest#0" expanded="false" />
             <element signature="method#testAddMeetingNotesThrowsNullPointerException#0;class#ContactManagerTest#0" expanded="false" />
             <element signature="method#testAddMeetingNotesThrowsIllegalStateException#0;class#ContactManagerTest#0" expanded="false" />
             <element signature="method#testAddMeetingNotesThrowsIllegalArgumentException#0;class#ContactManagerTest#0" expanded="false" />
             <element signature="method#testAddMeetingNotesAddNotesToPastMeeting#0;class#ContactManagerTest#0" expanded="false" />
             <element signature="method#testAddMeetingNotesConvertsFutureMeetingToPastMeetingAndAddsNotes#0;class#ContactManagerTest#0" expanded="false" />
-            <element signature="method#testConstructorLoadsFromFile#0;class#ContactManagerTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1888,13 +1806,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/test/ArrayChecker.java" />
-    <entry file="jar:///usr/local/java/jdk1.8.0_121/src.zip!/java/util/function/Predicate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="48" column="12" lean-forward="false" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1906,28 +1817,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/test/PastMeetingTestTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/spec/PastMeeting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/spec/ContactManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="610">
-          <caret line="136" column="8" lean-forward="false" selection-start-line="136" selection-start-column="8" selection-end-line="136" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/test/FutureMeetingTestTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/ContactTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="743">
-          <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/build.gradle" />
     <entry file="file://$PROJECT_DIR$/gradlew">
       <provider selected="true" editor-type-id="text-editor">
@@ -1954,14 +1844,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/reports/checkstyle.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -1973,27 +1855,143 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/FutureMeetingTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="21" column="1" lean-forward="false" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/ContactTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/docs/javadoc/impl/FutureMeetingImpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/docs/javadoc/spec/ContactManager.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/classes/main/impl/ContactImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/docs/javadoc/spec/Contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/tmp/javadoc/javadoc.options">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="40" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/PastMeetingTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/local/java/jdk1.8.0_121/src.zip!/java/util/function/Predicate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-414">
+          <caret line="48" column="12" lean-forward="false" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/local/java/jdk1.8.0_121/src.zip!/java/lang/NullPointerException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="53" column="46" lean-forward="false" selection-start-line="53" selection-start-column="46" selection-end-line="53" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/test/MeetingTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
-          <caret line="58" column="27" lean-forward="false" selection-start-line="58" selection-start-column="27" selection-end-line="58" selection-end-column="27" />
+        <state relative-caret-position="40">
+          <caret line="41" column="11" lean-forward="false" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/reports/checkstyle.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/spec/Contact.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/spec/ContactManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="26" column="10" lean-forward="true" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+        <state relative-caret-position="-19">
+          <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/spec/Meeting.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/ContactManagerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="14" column="15" lean-forward="false" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-          <folding />
+        <state relative-caret-position="-9">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="method#testAddNewContactNullNameThrowsException#0;class#ContactManagerTest#0" expanded="false" />
+            <element signature="method#testAddNewContactNullNotesThrowsException#0;class#ContactManagerTest#0" expanded="false" />
+            <element signature="method#testGetContactsFromName#0;class#ContactManagerTest#0" expanded="false" />
+            <element signature="method#testGetContactsFromNameThrowsException#0;class#ContactManagerTest#0" expanded="false" />
+            <element signature="method#testGetContactsFromIds#0;class#ContactManagerTest#0" expanded="false" />
+            <element signature="method#testGetContactsFromIdsNotFoundThrowsException#0;class#ContactManagerTest#0" expanded="false" />
+            <element signature="method#testAddFutureMeetingContactNotFoundThrowsException#0;class#ContactManagerTest#0" expanded="false" />
+            <element signature="method#testAddFutureMeetingPastDateThrowsException#0;class#ContactManagerTest#0" expanded="false" />
+            <element signature="method#testGetFutureMeetingListContactNotFoundThrowsException#0;class#ContactManagerTest#0" expanded="false" />
+            <element signature="method#testAddNewPastMeetingContactNotFoundThrowsException#0;class#ContactManagerTest#0" expanded="false" />
+            <element signature="method#testAddNewPastMeetingContactNullContactThrowsException#0;class#ContactManagerTest#0" expanded="false" />
+            <element signature="method#testAddNewPastMeetingContactNullDateThrowsException#0;class#ContactManagerTest#0" expanded="false" />
+            <element signature="method#testAddNewPastMeetingContactNullTextThrowsException#0;class#ContactManagerTest#0" expanded="false" />
+            <element signature="method#testGetMeetingByIdReturnsNullIfNone#0;class#ContactManagerTest#0" expanded="false" />
+            <element signature="method#testGetMeetingByIdReturnsPastMeeting#0;class#ContactManagerTest#0" expanded="false" />
+            <element signature="method#testAddMeetingNotesThrowsNullPointerException#0;class#ContactManagerTest#0" expanded="false" />
+            <element signature="method#testAddMeetingNotesThrowsIllegalStateException#0;class#ContactManagerTest#0" expanded="false" />
+            <element signature="method#testAddMeetingNotesThrowsIllegalArgumentException#0;class#ContactManagerTest#0" expanded="false" />
+            <element signature="method#testAddMeetingNotesAddNotesToPastMeeting#0;class#ContactManagerTest#0" expanded="false" />
+            <element signature="method#testAddMeetingNotesConvertsFutureMeetingToPastMeetingAndAddsNotes#0;class#ContactManagerTest#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2005,55 +2003,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/PastMeetingTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/spec/PastMeeting.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-126">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/FutureMeetingTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="21" column="1" lean-forward="false" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        <state relative-caret-position="126">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
+    <entry file="file://$PROJECT_DIR$/src/main/java/impl/ContactImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="36">
+          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/impl/contacts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/impl/FutureMeetingImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        <state relative-caret-position="288">
+          <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
           <folding>
-            <element signature="e#397#398#0" expanded="true" />
-            <element signature="e#429#430#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/impl/ContactImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/spec/Meeting.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="30" column="27" lean-forward="false" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+        <state relative-caret-position="396">
+          <caret line="23" column="21" lean-forward="false" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/spec/Contact.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/impl/MeetingImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="22" column="10" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+        <state relative-caret-position="216">
+          <caret line="24" column="4" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -2062,62 +2065,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/impl/PastMeetingImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        <state relative-caret-position="297">
+          <caret line="19" column="2" lean-forward="false" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
           <folding>
-            <element signature="e#333#334#0" expanded="true" />
-            <element signature="e#374#375#0" expanded="true" />
-            <element signature="e#442#443#0" expanded="true" />
-            <element signature="e#479#480#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#478#479#0" expanded="true" />
+            <element signature="e#509#510#0" expanded="true" />
+            <element signature="e#551#552#0" expanded="true" />
+            <element signature="e#573#574#0" expanded="true" />
+            <element signature="e#612#613#0" expanded="true" />
+            <element signature="e#635#636#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/impl/ContactManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="129" column="44" lean-forward="true" selection-start-line="129" selection-start-column="44" selection-end-line="129" selection-end-column="44" />
+        <state relative-caret-position="360">
+          <caret line="257" column="8" lean-forward="false" selection-start-line="257" selection-start-column="8" selection-end-line="257" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3919#3920#0" expanded="true" />
-            <element signature="e#3946#3947#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/ContactManagerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="242" column="67" lean-forward="false" selection-start-line="242" selection-start-column="16" selection-end-line="242" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#testAddNewContactNullNameThrowsException#0;class#ContactManagerTest#0" expanded="false" />
-            <element signature="method#testAddNewContactNullNotesThrowsException#0;class#ContactManagerTest#0" expanded="false" />
-            <element signature="method#testGetContactsFromName#0;class#ContactManagerTest#0" expanded="false" />
-            <element signature="method#testGetContactsFromNameThrowsException#0;class#ContactManagerTest#0" expanded="false" />
-            <element signature="method#testGetContactsFromIdsNotFoundThrowsException#0;class#ContactManagerTest#0" expanded="false" />
-            <element signature="method#testAddFutureMeetingContactNotFoundThrowsException#0;class#ContactManagerTest#0" expanded="false" />
-            <element signature="method#testAddFutureMeetingPastDateThrowsException#0;class#ContactManagerTest#0" expanded="false" />
-            <element signature="method#testAddFutureDateReturnsId#0;class#ContactManagerTest#0" expanded="false" />
-            <element signature="method#testGetPastMeetingListContactNotFoundThrowsException#0;class#ContactManagerTest#0" expanded="false" />
-            <element signature="method#testGetPastMeetingListReturnsMeeting#0;class#ContactManagerTest#0" expanded="false" />
-            <element signature="method#testGetPastMeetingListSorted#0;class#ContactManagerTest#0" expanded="false" />
-            <element signature="method#testGetFutureMeetingListByDateReturnsFutureMeetings#0;class#ContactManagerTest#0" expanded="false" />
-            <element signature="method#testGetFutureMeetingListByDateReturnsPastMeetings#0;class#ContactManagerTest#0" expanded="false" />
-            <element signature="method#testGetPastMeetingByIdThrowsException#0;class#ContactManagerTest#0" expanded="false" />
-            <element signature="method#testGetPastMeetingByIdReturn#0;class#ContactManagerTest#0" expanded="false" />
-            <element signature="method#testGetFutureMeetingByIdReturnsNullIfNone#0;class#ContactManagerTest#0" expanded="false" />
-            <element signature="method#testGetFutureMeetingByIdThrowsException#0;class#ContactManagerTest#0" expanded="false" />
-            <element signature="method#testGetFutureMeetingByIdReturn#0;class#ContactManagerTest#0" expanded="false" />
-            <element signature="method#testGetMeetingByIdReturnsNullIfNone#0;class#ContactManagerTest#0" expanded="false" />
-            <element signature="method#testGetMeetingByIdReturnsPastMeeting#0;class#ContactManagerTest#0" expanded="false" />
-            <element signature="method#testGetMeetingByIdReturnsFutureMeeting#0;class#ContactManagerTest#0" expanded="false" />
-            <element signature="method#testAddMeetingNotesThrowsNullPointerException#0;class#ContactManagerTest#0" expanded="false" />
-            <element signature="method#testAddMeetingNotesThrowsIllegalStateException#0;class#ContactManagerTest#0" expanded="false" />
-            <element signature="method#testAddMeetingNotesThrowsIllegalArgumentException#0;class#ContactManagerTest#0" expanded="false" />
-            <element signature="method#testAddMeetingNotesAddNotesToPastMeeting#0;class#ContactManagerTest#0" expanded="false" />
-            <element signature="method#testAddMeetingNotesConvertsFutureMeetingToPastMeetingAndAddsNotes#0;class#ContactManagerTest#0" expanded="false" />
-            <element signature="method#testConstructorLoadsFromFile#0;class#ContactManagerTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2125,5 +2092,80 @@
   </component>
   <component name="gradleExecuteTaskHistory">
     <option value="" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.22610295" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.22610295" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.22610295" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.22610295" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>cw-cm</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Gradle: com.google.code.findbugs:annotations:3.0.1</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.22610295" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

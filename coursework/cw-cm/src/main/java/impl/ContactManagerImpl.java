@@ -59,9 +59,9 @@ public class ContactManagerImpl implements Serializable, ContactManager {
     for (Iterator<Contact> it = contacts.iterator(); it.hasNext();) {
       if (!contacts.contains(it)) {
         throw new IllegalArgumentException("Contact not found/exist.");
-        }
+      }
     }
-    //When the contact exists or the date is not null the date is compared to the one to be held in the future.
+    //When the contact exists/date is not null the date is compared to the one to be held in future.
     if (!contacts.isEmpty() || date != null) {
       if (date.after(nowDate)) {
         MeetingImpl meetingImpl = new FutureMeetingImpl(meetingId + 1, contacts, date);
@@ -73,7 +73,7 @@ public class ContactManagerImpl implements Serializable, ContactManager {
       }
     } else {
       throw new NullPointerException("Contacts/date is required cannot be null.");
-      }
+    }
   }
 
   /**
@@ -174,26 +174,26 @@ public class ContactManagerImpl implements Serializable, ContactManager {
       IllegalArgumentException {
     if (contact == null) {
       throw new IllegalArgumentException("Contact cannot be null.");
-      }
+    }
     return null;
   }
 
   @Override
   public int addNewPastMeeting(Set<Contact> contacts, Calendar date, String text) throws
       IllegalArgumentException, NullPointerException {
-  if (date == null || text == null || contacts == null) {
-    throw new NullPointerException("Contacts/Date/Notes are null.");
-  }
-  for (Iterator<Contact> it = contacts.iterator(); it.hasNext();) {
-    if (!contacts.contains(it)) {
-      throw new IllegalArgumentException("Contact not found/exist.");
+    if (date == null || text == null || contacts == null) {
+      throw new NullPointerException("Contacts/Date/Notes are null.");
     }
-  }
+    for (Iterator<Contact> it = contacts.iterator(); it.hasNext();) {
+      if (!contacts.contains(it)) {
+        throw new IllegalArgumentException("Contact not found/exist.");
+      }
+    }
 
-  PastMeeting newPastMeeting = new PastMeetingImpl(date, contacts);
-  pastMeetingList.add(newPastMeeting);
-  newPastMeeting = addMeetingNotes(newPastMeeting.getId(), text);
-  return newPastMeeting.getId();
+    PastMeeting newPastMeeting = new PastMeetingImpl(date, contacts);
+    pastMeetingList.add(newPastMeeting);
+    newPastMeeting = addMeetingNotes(newPastMeeting.getId(), text);
+    return newPastMeeting.getId();
   }
 
   @Override
@@ -206,27 +206,26 @@ public class ContactManagerImpl implements Serializable, ContactManager {
       throw new IllegalStateException("Meeting is set for a date in the future.");
     } else if (nowDate == null || text == null || contacts == null) {
       throw new NullPointerException("Contacts/Date/Notes are null.");
-      }
+    }
       // TODO check whether the meeting exists.
       /*else if(contactImpl.getId().equals()){
           throw new IllegalArgumentException("Meeting doesn't exist.");
       }*/
-      return null;
+    return null;
   }
 
-    @Override
-    public int addNewContact(String name, String notes) {
-        Objects.requireNonNull(name, "Name is required cannot be null.");
-        Objects.requireNonNull(notes, "Notes is required cannot be null.");
+  @Override
+  public int addNewContact(String name, String notes) {
+    Objects.requireNonNull(name, "Name is required cannot be null.");
+    Objects.requireNonNull(notes, "Notes is required cannot be null.");
 
-        if (name.equals("") || notes.equals("")) {
-            throw new IllegalArgumentException("Passed an empty String parameter.");
-        }
-        Contact newContact = new ContactImpl(name, notes);
-        contacts.add(newContact);
-        return newContact.getId();
-
+    if (name.equals("") || notes.equals("")) {
+        throw new IllegalArgumentException("Passed an empty String parameter.");
     }
+    Contact newContact = new ContactImpl(name, notes);
+    contacts.add(newContact);
+    return newContact.getId();
+  }
 
   public Set<Contact> getContacts(String name) throws NullPointerException {
     Objects.requireNonNull(name, "Name is required cannot be null.");
@@ -248,25 +247,26 @@ public class ContactManagerImpl implements Serializable, ContactManager {
    * @throws IllegalArgumentException if no IDs are provided or if
    *                                  any of the provided IDs does not correspond to a real contact
    */
-    @Override
-    public Set<Contact> getContacts(int... ids) throws IllegalArgumentException {
-        if (ids.length == 0) {
-            throw new IllegalArgumentException("ids not provided.");
-        }
-        Set<Contact> resultSet = contacts.stream()
-                .filter(p -> (Arrays.stream(ids).anyMatch(i -> i == p.getId())))// Filters ids-id
-                .sorted(Comparator.comparing(Contact::getId))//Sort by Id
-                .collect(Collectors.toSet());
-        if (resultSet.size() != ids.length) {
-            throw new IllegalArgumentException("IDs does not correspond to a real contact");
-        } else {
-            return resultSet;
-        }
+  @Override
+  public Set<Contact> getContacts(int... ids) throws IllegalArgumentException {
+    if (ids.length == 0) {
+      throw new IllegalArgumentException("ids not provided.");
     }
+    Set<Contact> resultSet = contacts.stream()
+        .filter(p -> (Arrays.stream(ids).anyMatch(i -> i == p.getId())))// Filters ids-id
+        .sorted(Comparator.comparing(Contact::getId))//Sort by Id
+        .collect(Collectors.toSet());
+    if (resultSet.size() != ids.length) {
+      throw new IllegalArgumentException("IDs does not correspond to a real contact");
+    } else {
+      return resultSet;
+    }
+  }
 
   /**
    * Save all data to disk.
-   * <p>This method must be executed when the program is
+   * <p>
+   * This method must be executed when the program is
    * closed and when/if the user requests it, but currently doesn't
    */
   @Override
