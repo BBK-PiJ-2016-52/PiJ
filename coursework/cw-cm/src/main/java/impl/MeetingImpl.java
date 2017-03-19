@@ -1,12 +1,12 @@
 package impl;
 
-import spec.Contact;
-import spec.Meeting;
-
 import java.io.Serializable;
 import java.util.Calendar;
 import java.util.HashSet;
 import java.util.Set;
+
+import spec.Contact;
+import spec.Meeting;
 
 /**
  * Created by Eric on 08/03/2017.

@@ -1,7 +1,7 @@
 package impl;
 
-import spec.Contact;
 import java.io.Serializable;
+import spec.Contact;
 
 /**
  * Created by Eric on 08/03/2017.
@@ -68,8 +68,8 @@ public class ContactImpl implements Contact, Serializable {
   */
   @Override
   public String getName() {
-        return this.name;
-    }
+    return this.name;
+  }
 
   /**
   * Get the notes of a contact.
@@ -77,8 +77,8 @@ public class ContactImpl implements Contact, Serializable {
   */
   @Override
   public String getNotes() {
-        return notes;
-    }
+    return notes;
+  }
 
   /**
   * Add notes about the contact.
@@ -88,8 +88,8 @@ public class ContactImpl implements Contact, Serializable {
   public void addNotes(String note) {
     if (this.notes.isEmpty()) {
       this.notes = note;
-      } else {
-        this.notes += note;
-      }
+    } else {
+      this.notes += note;
+    }
   }
 }

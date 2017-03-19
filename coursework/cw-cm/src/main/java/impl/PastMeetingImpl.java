@@ -1,11 +1,11 @@
 package impl;
 
-import spec.Contact;
-import spec.PastMeeting;
-
 import java.io.Serializable;
 import java.util.Calendar;
 import java.util.Set;
+
+import spec.Contact;
+import spec.PastMeeting;
 
 /**
  * Created by Eric on 08/03/2017.
