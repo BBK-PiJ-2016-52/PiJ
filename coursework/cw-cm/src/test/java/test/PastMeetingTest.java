@@ -18,13 +18,12 @@ public class PastMeetingTest {
 
     Calendar pastDate;
     Set<Contact> contacts;
-    PastMeeting pastMeeting;
 
     @Before
     public void setUp() {
         pastDate = Calendar.getInstance();
         pastDate.add(Calendar.YEAR, -1);
-        contacts = new HashSet<Contact>();
+        contacts = new HashSet<>();
     }
 
     @Test

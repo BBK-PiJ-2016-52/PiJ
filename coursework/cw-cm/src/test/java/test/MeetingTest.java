@@ -44,6 +44,14 @@ public class MeetingTest {
     }
 
     @Test
+    public void testUniqueIds() {
+        Meeting meetingOne = new MeetingImpl(nowDate, contacts);
+        Meeting meetingTwo = new MeetingImpl(nowDate, contacts);
+
+        assertThat(meetingOne.getId(), is(not(equalTo(meetingTwo.getId()))));
+    }
+
+    @Test
     public void testImmutableDate() {
         Meeting meeting = new MeetingImpl(nowDate, contacts);
         Calendar date = meeting.getDate();
@@ -56,13 +64,5 @@ public class MeetingTest {
         Meeting meeting = new MeetingImpl(nowDate, contacts);
         Set<Contact> contacts = meeting.getContacts();
         assertFalse(contacts.size() == meeting.getContacts().size());
-    }
-
-    @Test
-    public void testUniqueIds() {
-        Meeting meetingOne = new MeetingImpl(nowDate, contacts);
-        Meeting meetingTwo = new MeetingImpl(nowDate, contacts);
-
-        assertThat(meetingOne.getId(), is(not(equalTo(meetingTwo.getId()))));
     }
 }
