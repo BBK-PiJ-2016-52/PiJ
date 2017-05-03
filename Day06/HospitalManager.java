@@ -1,4 +1,14 @@
 public class HospitalManager {
+   
+   // Main method for Hospital Manager with Constructor
+   public static void main(String[] args) {
+
+   HospitalManager constructorHM = HospitalManager();
+   constructorHM.launch();   
+
+   }
+
+
    private Patient firstPatient = null;
    
    // this is a member method of class HospitalManager
