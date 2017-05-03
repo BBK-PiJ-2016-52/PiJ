@@ -3,6 +3,10 @@ public class HospitalManager {
    
    // this is a member method of class HospitalManager
    public void addPatient(Patient newPatient) {
+   (firstPatient = null) {
+   firstPatient = newPatient;
+   return;
+   }
    Patient current = this.firstPatient;
       while (current.getNextPatient() != null) {
       // this means we are not yet at the end of the list
