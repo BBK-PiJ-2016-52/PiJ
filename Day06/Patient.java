@@ -11,4 +11,4 @@ public class Patient {
   this.nextPatient = null; // Pointer to another patient!
   }
 // other methods come here, including getters / setters
-}
+}

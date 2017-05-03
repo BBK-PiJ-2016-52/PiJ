@@ -14,9 +14,9 @@ public class HospitalManager {
       }
    // at this point, current points to the last patient
    current.setNextPatient(newPatient);
-   }
+   }
 
-   returns true if the patient was found and removed, false otherwise
+   //returns true if the patient was found and removed, false otherwise
    public boolean deletePatient(String name) {
    if (firstPatient == null) {
    // list is empty, nothing to remove
@@ -38,5 +38,5 @@ public class HospitalManager {
    current = current.getNextPatient();
    }
    return false;
-   }
+   }
 }
